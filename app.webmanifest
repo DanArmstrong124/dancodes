@@ -1,0 +1,8 @@
+{
+  "name": "DanCodes",
+  "description": "This app will be used for DanCodes to become mobile",
+  "icons": [{
+    "src": "assets/img/dancodes.png",
+    "sizes": "192x192"
+  }]
+}
