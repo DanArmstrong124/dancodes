@@ -10,6 +10,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet">
+        <link href="css/background.css" rel="stylesheet">
         <!-- Fonts CSS-->
         <link rel="stylesheet" href="css/heading.css">
         <link rel="stylesheet" href="css/body.css">
@@ -108,7 +109,7 @@
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/portfolio/dancodes.png" alt="SITE 1"/>
+                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/dancodes.png" alt="SITE 1"/>
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                                     <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
@@ -135,7 +136,7 @@
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/portfolio/dancodes.png" alt="SITE 2"/>
+                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/dancodes.png" alt="SITE 2"/>
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                                     <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
@@ -162,7 +163,7 @@
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/portfolio/dancodes.png" alt="SITE 3"/>
+                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/dancodes.png" alt="SITE 3"/>
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                                     <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
@@ -173,6 +174,7 @@
                 </div>
             </div>
         </div>
+
         <section class="page-section bg-primary text-white mb-0" id="about">
             <div class="container">
                 <!-- About Section Heading-->
@@ -188,16 +190,89 @@
                 <!-- About Section Content-->
                 <div class="row">
                     <div class="col-lg-4 ml-auto">
-                        <p class="pre-wrap lead">I am a full stack web developer from Surrey, I have been studying web development for the past 4 years and have come across many bugs and errors, but nothing is ever too difficult to get past. </p>
+                        <p class="pre-wrap lead" style="text-align: center;">I am a full stack web developer from Surrey, I have been studying web development for the past 4 years and have come across many bugs and errors, but nothing is ever too difficult to get past. </p>
                     </div>
-                    <div class="col-lg-4 mr-auto">
-                        <p class="pre-wrap lead">My skills set consists of:
-
-HTML, JAVASCRIPT, CSS, PYTHON, DJANGO, SQLITE3, AWS, BOOTSTRAP, STRIPE, JINJA, HEROKU, GITHUB, GITPOD, PYPI, TRAVIS.</p>
+                    <div class="col-lg-4 mr-auto" style="text-align: center;">
+                        <p class="pre-wrap lead"><button class="btn btn-primary" style="color: white; border: 1px dashed black; font-size: 25px;" data-toggle="modal" data-target="#skills">View My Skills</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-modal modal fade" id="skills" tabindex="-1" role="dialog" aria-labelledby="#skillsLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl" role="document">
+                    <div class="modal-content">
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                        <div class="modal-body text-center">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-8">
+                                        <!-- Portfolio Modal - Title-->
+                                        <h2 class="portfolio-modal-title text-secondary mb-0">My Skills</h2>
+                                        <!-- Icon Divider-->
+                                        <div class="divider-custom">
+                                            <div class="divider-custom-line"></div>
+                                            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                            <div class="divider-custom-line"></div>
+                                        </div>
+                                        <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/dancodes.png" alt="DanCodes"/>
+                                        <!-- Portfolio Modal - Text-->
+                                        <div class="progress" style="height: 100px; margin-bottom: 20px;">
+                                            <div class="progress-bar b-green-dark progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"><span style="font-size:25px;">HTML<hr style="background: black; margin:5px;">4 YEARS EXPERIENCE</span></div>
+                                        </div>
+                                        <div class="progress" style="height: 100px; margin-bottom: 20px;">
+                                            <div class="progress-bar b-green-dark progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"><span style="font-size:25px;">CSS<hr style="background: black; margin:5px;">4 YEARS EXPERIENCE</span></div>
+                                        </div>
+                                        <div class="progress" style="height: 100px; margin-bottom: 20px;">
+                                            <div class="progress-bar b-green-dark progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"><span style="font-size:25px;">JAVASCRIPT<hr style="background: black; margin:5px;">4 YEARS EXPERIENCE</span></div>
+                                        </div>
+                                        <div class="progress" style="height: 100px; margin-bottom: 20px;">
+                                            <div class="progress-bar b-green-dark progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"><span style="font-size:25px;">PYTHON<hr style="background: black; margin:5px;">4 YEARS EXPERIENCE</span></div>
+                                        </div>
+                                        <div class="progress" style="height: 100px; margin-bottom: 20px;">
+                                            <div class="progress-bar b-green-dark progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"><span style="font-size:25px;">BOOTSTRAP<hr style="background: black; margin:5px;">4 YEARS EXPERIENCE</span></div>
+                                        </div>
+                                        <div class="progress" style="height: 100px; margin-bottom: 20px;">
+                                            <div class="progress-bar b-green progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"><span style="font-size:25px;">PYPI<hr style="background: black; margin:5px;">3 YEAR EXPERIENCE</span></div>
+                                        </div>
+                                        <div class="progress" style="height: 100px; margin-bottom: 20px;">
+                                            <div class="progress-bar b-gold-rod progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"><span style="font-size:25px;">GITHUB<hr style="background: black; margin:5px;">2 YEARS EXPERIENCE</span></div>
+                                        </div>
+                                        <div class="progress" style="height: 100px; margin-bottom: 20px;">
+                                            <div class="progress-bar b-gold progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"><span style="font-size:25px;">DJANGO<hr style="background: black; margin:5px;">1.5 YEARS EXPERIENCE</span></div>
+                                        </div>
+                                        <div class="progress" style="height: 100px; margin-bottom: 20px;">
+                                            <div class="progress-bar b-gold progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"><span style="font-size:25px;">SQLITE<hr style="background: black; margin:5px;">1.5 YEARS EXPERIENCE</span></div>
+                                        </div>
+                                        <div class="progress" style="height: 100px; margin-bottom: 20px;">
+                                            <div class="progress-bar b-red progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"><span style="font-size:25px;">AWS<hr style="background: black; margin:5px;">1 YEAR EXPERIENCE</span></div>
+                                        </div>
+                                        <div class="progress" style="height: 100px; margin-bottom: 20px;">
+                                            <div class="progress-bar b-red progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"><span style="font-size:25px;">STRIPE<hr style="background: black; margin:5px;">1 YEAR EXPERIENCE</span></div>
+                                        </div>
+                                        <div class="progress" style="height: 100px; margin-bottom: 20px;">
+                                            <div class="progress-bar b-red progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"><span style="font-size:25px;">JINJA<hr style="background: black; margin:5px;">1 YEAR EXPERIENCE</span></div>
+                                        </div>
+                                        <div class="progress" style="height: 100px; margin-bottom: 20px;">
+                                            <div class="progress-bar b-red progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"><span style="font-size:25px;">HEROKU<hr style="background: black; margin:5px;">1 YEAR EXPERIENCE</span></div>
+                                        </div>
+                                        <div class="progress" style="height: 100px; margin-bottom: 20px;">
+                                            <div class="progress-bar b-red progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"><span style="font-size:25px;">GITPOD<hr style="background: black; margin:5px;">1 YEAR EXPERIENCE</span></div>
+                                        </div>
+                                        <div class="progress" style="height: 100px; margin-bottom: 20px;">
+                                            <div class="progress-bar b-red progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"><span style="font-size:25px;">TRAVIS<hr style="background: black; margin:5px;">1 YEAR EXPERIENCE</span></div>
+                                        </div>
+                                        <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+        
+
+
+
         <section class="page-section" id="contact">
             <div class="container">
                 <!-- Contact Section Heading-->
