@@ -4,5 +4,9 @@
   "icons": [{
     "src": "assets/img/dancodes.png",
     "sizes": "192x192"
-  }]
+  }],
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "theme_color": "aliceblue",
+  "background_color": "red",
 }
