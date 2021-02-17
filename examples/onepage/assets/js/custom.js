@@ -6,8 +6,7 @@ setInterval(function(){
 
     var p1 = $( "#primarybackground" );
 
-    if (primary.val() !== ""){
-        var primaryval = primary.val();
-        p1.css( "background-color", primaryval );
+    if ($( "#primarycolour" ).val() !== ""){
+        $( "#primarybackground" ).css( "background-color", $( "#primarycolour" ).val() );
     }
 }, 10);
