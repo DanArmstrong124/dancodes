@@ -7,7 +7,7 @@ var p1 = $( "#primarybackground" );
 
 
 setInterval(function(){
-    if (primary.val() != ""){
+    if (primary.val() !== ""){
         var primaryval = primary.val();
         p1.css( "background-color", primaryval );
     }
