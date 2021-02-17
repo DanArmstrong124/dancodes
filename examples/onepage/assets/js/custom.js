@@ -6,6 +6,10 @@ setInterval(function(){
     var othertext = $( "#textcolour2" );
     var hftext = $( "#hftextcolour" );
 
+    var pcurrent = $( "#pcurrent" );
+    var scurrent = $( "#scurrent" );
+    var tcurrent = $( "#tcurrent" );
+
     var p1 = $( "#primarybackground" );
     var p2 = $( "#about" );
     var s1 = $( "#mainNav" );
@@ -19,16 +23,19 @@ setInterval(function(){
         var primaryval = primary.val();
         p1.css( "background-color", primaryval );
         p2.css( "background-color", primaryval );
+        pcurrent.css( "background-color", primaryval );
     }
     if (secondary.val() !== ""){
         var secondaryval = secondary.val();
         s1.css( "background-color", secondaryval );
         s2.css( "background-color", secondaryval );
+        scurrent.css( "background-color", secondaryval );
     }
     if (tertiary.val() !== ""){
         var tertiaryval = tertiary.val();
         t1.css( "background-color", tertiaryval );
         t2.css( "background-color", tertiaryval );
+        tcurrent.css( "background-color", tertiaryval );
     }
     if (text.val() !== ""){
         var textval = text.val();

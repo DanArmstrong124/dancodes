@@ -46,13 +46,18 @@
             </div>
         </nav>
         <header id="primarybackground" class="masthead bg-primary text-white text-center">
+
             <div class="colourchanger" style="text-align: center; margin: 50px;">
-                <input class="col-4" type="text" id="primarycolour" placeholder="PRIMARY COLOUR"/>
-                <input class="col-4" type="text" id="secondarycolour" placeholder="SECONDARY COLOUR"/>
-                <input class="col-4" type="text" id="tertiarycolour" placeholder="TERTIARY COLOUR"/>
-                <input class="col-4" type="text" id="textcolour" placeholder="TEXT COLOUR"/>
+                <input class="col-6" type="text" id="primarycolour" placeholder="PRIMARY COLOUR"/>
+                <div style="background-color: white; border: 3px dotted black;">Current colour: <div id="pcurrent" style="width: 50px; height: 50px;"></div> </div>
+                <input class="col-6" type="text" id="secondarycolour" placeholder="SECONDARY COLOUR"/>
+                <div style="background-color: white; border: 3px dotted black;">Current colour: <div id="scurrent" style="width: 50px; height: 50px;"></div> </div>
+                <input class="col-6" type="text" id="tertiarycolour" placeholder="TERTIARY COLOUR"/>
+                <div style="background-color: white; border: 3px dotted black;">Current colour: <div id="tcurrent" style="width: 50px; height: 50px;"></div> </div>
+                
+                <!--<input class="col-4" type="text" id="textcolour" placeholder="TEXT COLOUR"/>
                 <input class="col-4" type="text" id="textcolour2" placeholder="TEXT COLOUR 2"/>
-                <input class="col-4" type="text" id="hftextcolour" placeholder="HEADER / FOOTER TEXT COLOUR"/>
+                <input class="col-4" type="text" id="hftextcolour" placeholder="HEADER / FOOTER TEXT COLOUR"/>-->
             </div>
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image--><img class="masthead-avatar mb-5" style="border-radius: 100%;" src="assets/img/icon1.png" alt="">
