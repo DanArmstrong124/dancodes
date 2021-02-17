@@ -9,4 +9,4 @@ setInterval(function(){
     if ($( "#primarycolour" ).val() !== ""){
         $( "#primarybackground" ).css( "background-color", $( "#primarycolour" ).val() );
     }
-}, 10);
+}, 300);
