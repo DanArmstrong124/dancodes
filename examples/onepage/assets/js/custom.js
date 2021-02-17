@@ -7,6 +7,6 @@ setInterval(function(){
     var p1 = $( "#primarybackground" );
 
     if ($( "#primarycolour" ).val() !== ""){
-        $( "#primarybackground" ).css( "background-color", $( "#primarycolour" ).val() );
+        $( "#primarybackground" ).css( "background-color", $( "#primarycolour" ).val() + " !important" );
     }
 }, 300);
