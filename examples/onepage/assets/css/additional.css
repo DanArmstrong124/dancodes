@@ -1,13 +1,13 @@
 .dancodeslogo {
-    width: 180px;
+    width: 181px;
     text-align: center;
     justify-content: center;
     justify-items: center;
     margin-left: auto;
     margin-right: auto;
-    height: 180px;
+    height: 181px;
     border: 3px solid black;
-    border-radius: 100%;
+    border-radius: 6%;
     margin-bottom: 25px;
 }
 
