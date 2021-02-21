@@ -109,5 +109,8 @@ setInterval(function() {
         if (clickpower <= 0.99) {
             pintfiller = 0;
         }
+        if (pintasecond <= 0.99) {
+            pintfiller = 0;
+        }
     }
 }, 10);
