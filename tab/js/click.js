@@ -38,23 +38,23 @@ setInterval(function() {
         foam.css( "background-color", "white" );
     }
 
-    else if (pintfiller >= 0.2) {
+    if (pintfiller >= 0.2) {
         per20.css( "background-color", "goldenrod" );
     }
 
-    else if (pintfiller >= 0.4) {
+    if (pintfiller >= 0.4) {
         per40.css( "background-color", "goldenrod" );
     }
 
-    else if (pintfiller >= 0.6) {
+    if (pintfiller >= 0.6) {
         per60.css( "background-color", "goldenrod" );
     }
 
-    else if (pintfiller >= 0.8) {
+    if (pintfiller >= 0.8) {
         per80.css( "background-color", "goldenrod" );
     }
 
-    else if (pintfiller >= 1) {
+    if (pintfiller >= 1) {
         per100.css( "background-color", "goldenrod" );
         foam.css( "background-color", "lightgrey" );
         if (clickpower <= 0.99) {
