@@ -106,7 +106,7 @@ setInterval(function() {
     if (pintfiller >= 1) {
         per100.css( "background-color", "goldenrod" );
         foam.css( "background-color", "lightgrey" );
-        if (clickpower <= 0.99) {
+        if ((clickpower <= 0.99) || (pintasecond <= 0.99))  {
             pintfiller = 0;
         }
     }
