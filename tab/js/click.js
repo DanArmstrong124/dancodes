@@ -29,7 +29,7 @@ setInterval(function() {
 
 /* Updating colour values */
 setInterval(function() {
-    if (pintamount < 0.19) {
+    if (pintfiller < 0.19) {
         per20.css( "background-color", "white" );
         per40.css( "background-color", "white" );
         per60.css( "background-color", "white" );
