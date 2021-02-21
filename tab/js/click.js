@@ -40,6 +40,7 @@ setInterval(function() {
     currentpricetext.html("PRICE: " + currentprice.toFixed(2));
     sellamount = currentprice.toFixed(2) * pintamount.toFixed(2);
     sellbtn.html("SELL: " + sellamount.toFixed(2))
+    moneytotal.html("£" + moneyamount.toFixed(2));
 }, 10);
 
 /* Updating colour values */
