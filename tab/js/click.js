@@ -8,12 +8,17 @@ var per80 = $( "#80" );
 var per100 = $( "#100" );
 var foam = $( "#foam" );
 
+var sellbtn = $( "#sell" );
+
 var pinttotal = $( "#pinttotal" );
 var moneytotal = $( "#moneytotal" );
+var currentpricetext = $( "#currentprice" );
 
+var currentprice = 1.50;
 var pintamount = 0;
 var pintfiller = 0;
 var moneyamount = 0;
+var sellamount = currentprice.toFixed(2) * pintamount.toFixed(2);
 
 var clickpower = 0.05;
 
@@ -22,9 +27,18 @@ pintglass.click(function() {
   pintfiller = pintfiller + clickpower;
 });
 
+/* Selling pints */
+
+sellbtn.click(function() {
+    pintamount = 0;
+    moneyamount = moneyamount + sellamount;
+});
+
 /* Updating text values */
 setInterval(function() {
     pinttotal.html("PINTS: " + pintamount.toFixed(2));
+    currentpricetext.html("PRICE: " + currentprice.toFixed(2));
+    sellbtn.html("SELL: " + sellamount.toFixed(2))
 }, 10);
 
 /* Updating colour values */
