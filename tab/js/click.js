@@ -18,7 +18,7 @@ var currentprice = 1.50;
 var pintamount = 0;
 var pintfiller = 0;
 var moneyamount = 0;
-var sellamount = currentprice.toFixed(2) * pintamount.toFixed(2);
+var sellamount = 0;
 
 var clickpower = 0.05;
 
@@ -38,6 +38,7 @@ sellbtn.click(function() {
 setInterval(function() {
     pinttotal.html("PINTS: " + pintamount.toFixed(2));
     currentpricetext.html("PRICE: " + currentprice.toFixed(2));
+    sellamount = currentprice.toFixed(2) * pintamount.toFixed(2);
     sellbtn.html("SELL: " + sellamount.toFixed(2))
 }, 10);
 
