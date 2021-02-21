@@ -12,12 +12,14 @@ var pinttotal = $( "#pinttotal" );
 var moneytotal = $( "#moneytotal" );
 
 var pintamount = 0;
+var pintfiller = 0;
 var moneyamount = 0;
 
 var clickpower = 0.05;
 
 pintglass.click(function() {
   pintamount = pintamount + clickpower;
+  pintfiller = pintfiller + clickpower;
 });
 
 /* Updating text values */
@@ -34,5 +36,29 @@ setInterval(function() {
         per80.css( "background-color", "white" );
         per100.css( "background-color", "white" );
         foam.css( "background-color", "white" );
+    }
+
+    else if (pintfiller >= 0.2) {
+        per20.css( "background-color", "goldenrod" );
+    }
+
+    else if (pintfiller >= 0.4) {
+        per40.css( "background-color", "goldenrod" );
+    }
+
+    else if (pintfiller >= 0.6) {
+        per60.css( "background-color", "goldenrod" );
+    }
+
+    else if (pintfiller >= 0.8) {
+        per80.css( "background-color", "goldenrod" );
+    }
+
+    else if (pintfiller >= 1) {
+        per100.css( "background-color", "goldenrod" );
+        foam.css( "background-color", "lightgrey" );
+        if (clickpower <= 0.99) {
+            pintfiller = 0;
+        }
     }
 }, 10);
