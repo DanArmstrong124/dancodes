@@ -40,7 +40,7 @@ buystaff.click(function() {
     if (staffcost <= moneyamount) {
         staffowned = staffowned + 1;
         moneyamount = moneyamount - staffcost;
-        staffcost = staffcost * 1.5;
+        staffcost = staffcost * 1.15;
         pintasecond = pintasecond + staffpower;
     }
 });
