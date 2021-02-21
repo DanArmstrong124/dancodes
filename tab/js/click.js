@@ -41,6 +41,7 @@ buystaff.click(function() {
         staffowned = staffowned + 1;
         moneyamount = moneyamount - staffcost;
         staffcost = staffcost * 1.5;
+        pintasecond = pintasecond + staffpower;
     }
 });
 
