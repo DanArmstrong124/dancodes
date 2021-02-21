@@ -28,11 +28,11 @@ setInterval(function() {
 /* Updating colour values */
 setInterval(function() {
     if (pintamount < 0.19) {
-        per20.css( "background-color", white );
-        per40.css( "background-color", white );
-        per60.css( "background-color", white );
-        per80.css( "background-color", white );
-        per100.css( "background-color", white );
-        foam.css( "background-color", white );
+        per20.css( "background-color", "white" );
+        per40.css( "background-color", "white" );
+        per60.css( "background-color", "white" );
+        per80.css( "background-color", "white" );
+        per100.css( "background-color", "white" );
+        foam.css( "background-color", "white" );
     }
 }, 10);
