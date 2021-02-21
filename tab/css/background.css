@@ -1,0 +1,31 @@
+.b-green-light {
+    background-color: lightgreen;
+}
+
+.b-green {
+    background-color: green;
+}
+
+.b-green-dark {
+    background-color: darkgreen;
+}
+
+.b-red-light {
+    background-color: orangered;
+}
+
+.b-red {
+    background-color: red;
+}
+
+.b-red-dark {
+    background-color: darkred;
+}
+
+.b-gold-rod {
+    background-color: goldenrod
+}
+
+.b-gold {
+    background-color: gold;
+}
