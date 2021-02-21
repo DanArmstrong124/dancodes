@@ -13,12 +13,20 @@ var sellbtn = $( "#sell" );
 var pinttotal = $( "#pinttotal" );
 var moneytotal = $( "#moneytotal" );
 var currentpricetext = $( "#currentprice" );
+var pintspersecond = $( "#pintasec" );
+var buystaff = $( "#buystaff" );
 
+var pintasecond = 0;
 var currentprice = 1.50;
 var pintamount = 0;
 var pintfiller = 0;
 var moneyamount = 0;
 var sellamount = 0;
+
+var staffpower = 0.1;
+var staffowned = 0;
+var staffincome = 0;
+var staffcost = 50;
 
 var clickpower = 0.05;
 
@@ -27,11 +35,32 @@ pintglass.click(function() {
   pintfiller = pintfiller + clickpower;
 });
 
+/* Auto Pints */
+buystaff.click(function() {
+    if (staffcost <= moneyamount) {
+        staffowned = staffowned + 1;
+        moneyamount = moneyamount - staffcost;
+        staffcost = staffcost * 1.5;
+    }
+});
+
+setInterval(function() {
+    staffincome = staffpower * staffowned;
+    pintamount = pintamount + staffincome;
+    pintfiller = pintfiller + staffincome;
+}, 10);
+
 /* Selling pints */
 
 sellbtn.click(function() {
     pintamount = 0;
     moneyamount = moneyamount + sellamount;
+    per20.css( "background-color", "white" );
+    per40.css( "background-color", "white" );
+    per60.css( "background-color", "white" );
+    per80.css( "background-color", "white" );
+    per100.css( "background-color", "white" );
+    foam.css( "background-color", "white" );
 });
 
 /* Updating text values */
@@ -39,8 +68,10 @@ setInterval(function() {
     pinttotal.html("PINTS: " + pintamount.toFixed(2));
     currentpricetext.html("PRICE: " + currentprice.toFixed(2));
     sellamount = currentprice.toFixed(2) * pintamount.toFixed(2);
-    sellbtn.html("SELL: " + sellamount.toFixed(2))
+    sellbtn.html("SELL: " + sellamount.toFixed(2));
     moneytotal.html("£" + moneyamount.toFixed(2));
+    pintspersecond.html("PINTS/second: " + pintasecond.toFixed(2));
+    buystaff.html("BUY STAFF (+0.1 Pints/seconds): £" + staffcost.toFixed(2));
 }, 10);
 
 /* Updating colour values */
