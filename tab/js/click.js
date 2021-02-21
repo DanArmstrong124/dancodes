@@ -1,11 +1,12 @@
 
 var pintglass = $( "#pint" );
 
-var per20 = $("#20");
-var per40 = $("#40");
-var per60 = $("#60");
-var per80 = $("#80");
-var per100 = $("#100");
+var per20 = $( "#20" );
+var per40 = $( "#40" );
+var per60 = $( "#60" );
+var per80 = $( "#80" );
+var per100 = $( "#100" );
+var foam = $( "#foam" );
 
 var pinttotal = $( "#pinttotal" );
 var moneytotal = $( "#moneytotal" );
@@ -32,5 +33,6 @@ setInterval(function() {
         per60.css( "background-color", white );
         per80.css( "background-color", white );
         per100.css( "background-color", white );
+        foam.css( "background-color", white );
     }
 }, 10);
