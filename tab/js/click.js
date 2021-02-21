@@ -56,6 +56,7 @@ setInterval(function() {
 sellbtn.click(function() {
     pintamount = 0;
     moneyamount = moneyamount + sellamount;
+    pintfiller = 0;
     per20.css( "background-color", "white" );
     per40.css( "background-color", "white" );
     per60.css( "background-color", "white" );
