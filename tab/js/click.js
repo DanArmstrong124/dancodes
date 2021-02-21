@@ -49,7 +49,7 @@ setInterval(function() {
     staffincome = staffpower * staffowned;
     pintamount = pintamount + staffincome;
     pintfiller = pintfiller + staffincome;
-}, 10);
+}, 1000);
 
 /* Selling pints */
 
