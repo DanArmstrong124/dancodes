@@ -1,3 +1,4 @@
+
 var pintglass = $( "#pint" );
 
 var pinttotal = $( "#pinttotal" );
@@ -13,5 +14,5 @@ pintglass.click(function() {
 });
 
 setInterval(function() {
-    pinttotal.html("PINTS: " + pintamount);
+    pinttotal.html("PINTS: " + pintamount.toFixed(2));
 }, 10);
