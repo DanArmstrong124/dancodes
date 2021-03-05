@@ -2,7 +2,7 @@ var garden = $( "#beergarden" );
 var pub = $( "#pub" );
 
 var gardenDate = new Date("Jan 5, 2022 15:37:25").getTime();
-var pubDate = new Date("Jan 5, 2022 15:37:25").getTime();
+var pubDate = new Date("Mar 5, 2021 08:27:25").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
