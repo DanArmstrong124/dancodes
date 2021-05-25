@@ -1,7 +1,7 @@
 var fill = document.getElementById("pintdrink");
 var btn = document.getElementById("btnpress");
 var pintsleft = document.getElementById("pintsleft");
-var storageCurrentPints = localStorage.getItem('currentpints');
+var storageCurrentPints = parseInt(localStorage.getItem('currentpints'));
 
 var ready = true;
 //to set the timeouts
