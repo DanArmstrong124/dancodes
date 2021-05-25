@@ -1,7 +1,9 @@
 var fill = document.getElementById("pintdrink");
 var btn = document.getElementById("btnpress");
 var pintsleft = document.getElementById("pintsleft");
-const storageCurrentPints = localStorage.getItem('currentpints');
+var storageCurrentPints = localStorage.getItem('currentpints');
+
+currentpints = storageCurrentPints;
 
 var ready = true;
 //to set the timeouts
@@ -19,10 +21,10 @@ btn.addEventListener("click", function() {
         currentpints = currentpints + 1;
         ready = false;
         fillsofar = currentpints / totalpints * 100;
-        window.localStorage.setItem('currentpints', currentpints);
         setTimeout(function() {
             //15 min timeout to turn the button back on
             ready = true;
+            window.localStorage.setItem('currentpints', currentpints);
         }, 900000);
         //add 1 to pints and set to false
     }
@@ -31,10 +33,6 @@ btn.addEventListener("click", function() {
         //announce they have hit limit for the day/week/hour
     }
 });
-
-setTimeout(function(){
-    currentpints = storageCurrentPints;
-}, 50);
 
 setInterval(function(){
     fill.style.height = fillsofar + "%";
