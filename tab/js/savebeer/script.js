@@ -35,10 +35,11 @@ var fillsofar = storageCurrentPints / totalpints * 100;
 btn.addEventListener("click", function() {
     if (ready === true) {
         ready = false;
-        fillsofar = storageCurrentPints / totalpints * 100;
+        //fillsofar = storageCurrentPints / totalpints * 100;
         localStorage.setItem('currentpints', parseInt(storageCurrentPints + 1));
         storageCurrentPints = parseInt(localStorage.getItem('currentpints'));
-        fill.style.height = fillsofar + "%";
+        //fill.style.height = fillsofar + "%";
+        fill.style.height = (storageCurrentPints / totalpints * 100) + "%";
         pintsleft.innerHTML = storageCurrentPints;
         setTimeout(function() {
             //15 min timeout to turn the button back on
