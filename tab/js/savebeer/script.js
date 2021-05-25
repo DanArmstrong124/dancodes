@@ -48,7 +48,7 @@ btn.addEventListener("click", function() {
 
 setInterval(function(){
     fill.style.height = fillsofar + "%";
-    pintsleft.innerHTML = currentpints;
+    pintsleft.innerHTML = storageCurrentPints;
 
     //if ((currentpints > 9) || (currentpints < 100)){
         //pintsleft.style.fontSize = smaller
