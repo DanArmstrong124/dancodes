@@ -21,7 +21,7 @@ setTimeout(function() {
             localStorage.setItem('first', false);
         }
     }
-    else {
+    else if (storageFirstVisit === false) {
         currentpints = storageCurrentPints;
     }
 }, 50);
