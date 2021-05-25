@@ -3,8 +3,6 @@ var btn = document.getElementById("btnpress");
 var pintsleft = document.getElementById("pintsleft");
 var storageCurrentPints = localStorage.getItem('currentpints');
 
-currentpints = storageCurrentPints;
-
 var ready = true;
 //to set the timeouts
 
@@ -18,6 +16,7 @@ var fillsofar = currentpints / totalpints * 100;
 
 btn.addEventListener("click", function() {
     if (ready === true) {
+        currentpints = storageCurrentPints;
         currentpints = currentpints + 1;
         ready = false;
         fillsofar = currentpints / totalpints * 100;
