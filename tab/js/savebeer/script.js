@@ -11,7 +11,7 @@ var ready = true;
 var totalpints = 124;
 // 6,448,000,000 ( 6448000000 )
 
-var currentpints = 0;
+var currentpints = storageCurrentPints;
 //will be linked to database
 
 setTimeout(function() {
@@ -33,7 +33,7 @@ btn.addEventListener("click", function() {
         currentpints = currentpints + 1;
         ready = false;
         fillsofar = currentpints / totalpints * 100;
-        window.localStorage.setItem('currentpints', parseInt(currentpints));
+        localStorage.setItem('currentpints', parseInt(currentpints));
         setTimeout(function() {
             //15 min timeout to turn the button back on
             ready = true;
