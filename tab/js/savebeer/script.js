@@ -1,6 +1,7 @@
 var fill = document.getElementById("pintdrink");
 var btn = document.getElementById("btnpress");
 var pintsleft = document.getElementById("pintsleft");
+const storageCurrentPints = localStorage.getItem('currentpints');
 
 var ready = true;
 //to set the timeouts
@@ -31,10 +32,13 @@ btn.addEventListener("click", function() {
     }
 });
 
+setTimeout(function(){
+    currentpints = storageCurrentPints;
+}, 50);
+
 setInterval(function(){
     fill.style.height = fillsofar + "%";
     pintsleft.innerHTML = currentpints + " / " + totalpints;
-    window.localStorage.getItem(currentpints);
 }, 100);
 
 //Every 0.1s the pint will refresh to keep filling every persons clicks
