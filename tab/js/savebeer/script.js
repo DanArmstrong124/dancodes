@@ -1,9 +1,12 @@
 var fill = document.getElementById("pintdrink");
 var btn = document.getElementById("btnpress");
 var pintsleft = document.getElementById("pintsleft");
-var storageCurrentPints = parseInt(localStorage.getItem('currentpints'));
 var storageFirstVisit = localStorage.getItem('first');
 var firstvisit = true;
+
+setInterval(function() {
+    var storageCurrentPints = parseInt(localStorage.getItem('currentpints'));
+}, 1000);
 
 var ready = true;
 //to set the timeouts
@@ -33,7 +36,7 @@ btn.addEventListener("click", function() {
         ready = false;
         fillsofar = currentpints / totalpints * 100;
         localStorage.setItem('currentpints', parseInt(storageCurrentPints + 1));
-        pintsleft.innerHTML = parseInt(storageCurrentPints);
+        pintsleft.innerHTML = storageCurrentPints;
         setTimeout(function() {
             //15 min timeout to turn the button back on
             ready = true;
