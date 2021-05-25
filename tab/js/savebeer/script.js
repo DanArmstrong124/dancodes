@@ -13,7 +13,7 @@ var currentpints = 0;
 //will be linked to database
 
 setTimeout(function() {
-    if (storageCurrentPints === "NaN") {
+    if (storageCurrentPints === "null") {
         localStorage.setItem('currentpints', 0);
     }
 }, 50);
