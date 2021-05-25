@@ -21,10 +21,10 @@ setTimeout(function() {
             localStorage.setItem('first', false);
         }
     }
+    else {
+        currentpints = storageCurrentPints;
+    }
 }, 50);
-
-parseInt(storageCurrentPints);
-currentpints = storageCurrentPints;
 
 var fillsofar = currentpints / totalpints * 100;
 
@@ -49,6 +49,11 @@ btn.addEventListener("click", function() {
 setInterval(function(){
     fill.style.height = fillsofar + "%";
     pintsleft.innerHTML = currentpints;
+
+    //if ((currentpints > 9) || (currentpints < 100)){
+        //pintsleft.style.fontSize = smaller
+        //pints.left.style.left = less
+   // }
 }, 1000);
 
 //Every 0.1s the pint will refresh to keep filling every persons clicks
