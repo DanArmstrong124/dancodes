@@ -1,10 +1,11 @@
 var fill = document.getElementById("pintdrink");
 var btn = document.getElementById("btnpress");
+var pintsleft = document.getElementById("pintsleft");
 
 var ready = true;
 //to set the timeouts
 
-var totalpints = 3;
+var totalpints = 124;
 // 6,448,000,000 ( 6448000000 )
 
 var currentpints = 0;
@@ -31,6 +32,7 @@ btn.addEventListener("click", function() {
 
 setInterval(function(){
     fill.style.height = fillsofar + "%";
+    pintsleft.innerHTML = currentpints + " / " + totalpints;
 }, 100);
 
 //Every 0.1s the pint will refresh to keep filling every persons clicks
