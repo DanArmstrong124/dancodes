@@ -48,10 +48,10 @@ btn.addEventListener("click", function() {
 
 setInterval(function(){
     fill.style.height = fillsofar + "%";
-    if (currentpints === "NaN"){
+    if (currentpints === NaN){
         pintsleft.innerHTML = "Press Me!";
     }
-    else if (currentpints !== "NaN"){
+    else if (currentpints !== NaN){
         pintsleft.innerHTML = currentpints;
     }
 }, 1000);
