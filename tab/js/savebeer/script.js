@@ -17,7 +17,7 @@ var currentpints = 0;
 setTimeout(function() {
     if (storageFirstVisit !== false){
         if (firstvisit === true) {
-            localStorage.setItem('currentpints', 0);
+            localStorage.setItem('currentpints', parseInt(0));
             localStorage.setItem('first', false);
         }
     }
