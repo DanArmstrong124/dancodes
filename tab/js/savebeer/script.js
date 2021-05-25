@@ -2,6 +2,8 @@ var fill = document.getElementById("pintdrink");
 var btn = document.getElementById("btnpress");
 var pintsleft = document.getElementById("pintsleft");
 var storageCurrentPints = parseInt(localStorage.getItem('currentpints'));
+var storageFirstVisit = localStorage.getItem('first');
+var firstvisit = true;
 
 var ready = true;
 //to set the timeouts
@@ -13,8 +15,11 @@ var currentpints = 0;
 //will be linked to database
 
 setTimeout(function() {
-    if (storageCurrentPints === "null") {
-        localStorage.setItem('currentpints', 0);
+    if (storageFirstVisit !== false){
+        if (firstvisit === true) {
+            localStorage.setItem('currentpints', 0);
+            localStorage.setItem('first', false);
+        }
     }
 }, 50);
 
