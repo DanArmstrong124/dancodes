@@ -33,6 +33,7 @@ btn.addEventListener("click", function() {
         ready = false;
         fillsofar = currentpints / totalpints * 100;
         localStorage.setItem('currentpints', parseInt(storageCurrentPints + 1));
+        localStorage.getItem("currentpints");
         pintsleft.innerHTML = storageCurrentPints;
         setTimeout(function() {
             //15 min timeout to turn the button back on
