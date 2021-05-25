@@ -11,12 +11,12 @@ var currentpints = 0;
 //will be linked to database
 
 var fillsofar = totalpints / currentpints;
-// 3 / 0 so far
 
 btn.addEventListener("click", function() {
     if (ready === true) {
         currentpints = currentpints + 1;
         ready = false;
+        fillsofar = totalpints / currentpints;
         setTimeout(function() {
             //15 min timeout to turn the button back on
             ready = true;
