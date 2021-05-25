@@ -48,7 +48,12 @@ btn.addEventListener("click", function() {
 
 setInterval(function(){
     fill.style.height = fillsofar + "%";
-    pintsleft.innerHTML = currentpints;
+    if (currentpints === "NaN"){
+        pintsleft.innerHTML = "Press Me!";
+    }
+    else if (currentpints !== "NaN"){
+        pintsleft.innerHTML = currentpints;
+    }
 }, 1000);
 
 //Every 0.1s the pint will refresh to keep filling every persons clicks
