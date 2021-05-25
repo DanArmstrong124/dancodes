@@ -43,7 +43,7 @@ btn.addEventListener("click", function() {
 
 setInterval(function(){
     fill.style.height = fillsofar + "%";
-    pintsleft.innerHTML = currentpints + " / " + totalpints;
+    pintsleft.innerHTML = currentpints;
 }, 1000);
 
 //Every 0.1s the pint will refresh to keep filling every persons clicks
