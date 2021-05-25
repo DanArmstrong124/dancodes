@@ -17,7 +17,7 @@ var currentpints = 0;
 setTimeout(function() {
     if (storageFirstVisit !== false){
         if (firstvisit === true) {
-            localStorage.setItem('currentpints', parseInt(0));
+            currentpints = 0;
             localStorage.setItem('first', false);
         }
     }
@@ -48,12 +48,7 @@ btn.addEventListener("click", function() {
 
 setInterval(function(){
     fill.style.height = fillsofar + "%";
-    if (currentpints === NaN){
-        pintsleft.innerHTML = "Press Me!";
-    }
-    else if (currentpints !== NaN){
-        pintsleft.innerHTML = currentpints;
-    }
+    pintsleft.innerHTML = currentpints;
 }, 1000);
 
 //Every 0.1s the pint will refresh to keep filling every persons clicks
