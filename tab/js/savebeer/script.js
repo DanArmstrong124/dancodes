@@ -12,6 +12,12 @@ var totalpints = 124;
 var currentpints = 0;
 //will be linked to database
 
+setTimeout(function() {
+    if (storageCurrentPints === "NaN") {
+        localStorage.setItem('currentpints', 0);
+    }
+}, 50);
+
 parseInt(storageCurrentPints);
 currentpints = storageCurrentPints;
 
