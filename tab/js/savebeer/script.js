@@ -13,7 +13,7 @@ var currentpints = 0;
 var fillsofar = totalpints / currentpints;
 // 3 / 0 so far
 
-btn.onclick(function() {
+btn.addEventListener("click", function() {
     if (ready === true) {
         currentpints = currentpints + 1;
         ready = false;
