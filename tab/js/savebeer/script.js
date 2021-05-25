@@ -33,7 +33,7 @@ btn.addEventListener("click", function() {
         currentpints = currentpints + 1;
         ready = false;
         fillsofar = currentpints / totalpints * 100;
-        localStorage.setItem('currentpints', parseInt(currentpints + 1));
+        localStorage.setItem('currentpints', parseInt(storageCurrentPints + 1));
         setTimeout(function() {
             //15 min timeout to turn the button back on
             ready = true;
@@ -54,7 +54,7 @@ setInterval(function(){
         //pintsleft.style.fontSize = smaller
         //pints.left.style.left = less
    // }
-}, 1000);
+}, 100);
 
 //Every 0.1s the pint will refresh to keep filling every persons clicks
 
