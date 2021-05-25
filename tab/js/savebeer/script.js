@@ -12,10 +12,8 @@ var totalpints = 124;
 var currentpints = 0;
 //will be linked to database
 
-setTimeout(function() {
-    parseInt(storageCurrentPints);
-    currentpints = storageCurrentPints;
-}, 50);
+parseInt(storageCurrentPints);
+currentpints = storageCurrentPints;
 
 var fillsofar = currentpints / totalpints * 100;
 
