@@ -12,6 +12,11 @@ var totalpints = 124;
 var currentpints = 0;
 //will be linked to database
 
+setTimeout(function() {
+    parseInt(storageCurrentPints);
+    currentpints = storageCurrentPints;
+}, 50);
+
 var fillsofar = currentpints / totalpints * 100;
 
 btn.addEventListener("click", function() {
@@ -35,7 +40,20 @@ btn.addEventListener("click", function() {
 setInterval(function(){
     fill.style.height = fillsofar + "%";
     pintsleft.innerHTML = currentpints + " / " + totalpints;
-    currentpints = storageCurrentPints;
-}, 100);
+}, 1000);
 
 //Every 0.1s the pint will refresh to keep filling every persons clicks
+
+
+//NOTES
+
+//Set a storage for time left until 15
+//On btn click, get day and time.
+//get 15 mins in the future
+//Work out the time between them
+//Set 15 min time to storage var
+//on re-open bring 15 min time back to screen
+//calc current time and date on re-open
+//calc time between
+//if 0 seconds left: ready = true
+//stops refreshing to spam
