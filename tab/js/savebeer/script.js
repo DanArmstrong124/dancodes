@@ -16,7 +16,6 @@ var fillsofar = currentpints / totalpints * 100;
 
 btn.addEventListener("click", function() {
     if (ready === true) {
-        currentpints = storageCurrentPints;
         currentpints = currentpints + 1;
         ready = false;
         fillsofar = currentpints / totalpints * 100;
@@ -36,6 +35,7 @@ btn.addEventListener("click", function() {
 setInterval(function(){
     fill.style.height = fillsofar + "%";
     pintsleft.innerHTML = currentpints + " / " + totalpints;
+    currentpints = storageCurrentPints;
 }, 100);
 
 //Every 0.1s the pint will refresh to keep filling every persons clicks
