@@ -27,6 +27,7 @@ setTimeout(function() {
         }
     }
     else if (storageFirstVisit === false) {
+        storageCurrentPints = parseInt(localStorage.getItem('currentpints'));
         currentpints = storageCurrentPints;
     }
 }, 500);
