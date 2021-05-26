@@ -55,7 +55,9 @@ btn.addEventListener("click", function() {
         //storageCurrentPints = parseInt(localStorage.getItem('currentpints'));
         fillsofar = parseInt(localStorage.getItem('currentpints')) /  totalpints * 100;
         fill.style.height = fillsofar + "%";
-        pintsleft.innerHTML = storageCurrentPints;
+        setTimeout(function() {
+            pintsleft.innerHTML = storageCurrentPints;
+        }, 50);
         setTimeout(function() {
             //15 min timeout to turn the button back on
             ready = true;
