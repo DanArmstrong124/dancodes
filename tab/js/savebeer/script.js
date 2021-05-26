@@ -8,8 +8,8 @@ var foam1 = document.getElementById("foam1");
 var foam2 = document.getElementById("foam2");
 
 setTimeout(function() {
-    foam1.style.opacity = 0%;
-    foam2.style.opacity = 0%;
+    foam1.style.opacity = "0";
+    foam2.style.opacity = "0";
 }, 10);
 
 setInterval(function() {
@@ -72,8 +72,8 @@ setInterval(function(){
     fill.style.height = fillsofar + "%";
     pintsleft.innerHTML = parseInt(localStorage.getItem('currentpints'));
     if (currentpints > 120) {
-        foam1.style.opacity = 100%;
-        foam2.style.opacity = 100%;
+        foam1.style.opacity = "1";
+        foam2.style.opacity = "1";
     }
 
     //if ((currentpints > 9) || (currentpints < 100)){
