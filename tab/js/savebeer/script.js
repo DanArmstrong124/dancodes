@@ -37,8 +37,9 @@ btn.addEventListener("click", function() {
     if (ready === true) {
         ready = false;
         //fillsofar = storageCurrentPints / totalpints * 100;
-        localStorage.setItem('currentpints', parseInt(storageCurrentPints + 1));
         storageCurrentPints = parseInt(localStorage.getItem('currentpints'));
+        localStorage.setItem('currentpints', parseInt(storageCurrentPints + 1));
+        //storageCurrentPints = parseInt(localStorage.getItem('currentpints'));
         fillsofar = parseInt(localStorage.getItem('currentpints')) /  totalpints * 100;
         fill.style.height = fillsofar + "%";
         pintsleft.innerHTML = storageCurrentPints;
