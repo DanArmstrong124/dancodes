@@ -70,7 +70,7 @@ btn.addEventListener("click", function() {
 
 setInterval(function(){
     fill.style.height = fillsofar + "%";
-    pintsleft.innerHTML = storageCurrentPints;
+    pintsleft.innerHTML = parseInt(localStorage.getItem('currentpints'));
 
     //if ((currentpints > 9) || (currentpints < 100)){
         //pintsleft.style.fontSize = smaller
