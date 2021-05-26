@@ -6,7 +6,8 @@ var storageFirstVisit = localStorage.getItem('first');
 var firstvisit = true;
 
 setInterval(function() {
-        storageCurrentPints = parseInt(localStorage.getItem('currentpints')); //Gets storage for pints
+    currentpints = storageCurrentPints;
+        //storageCurrentPints = parseInt(localStorage.getItem('currentpints')); //Gets storage for pints
 }, 100);
 
 var ready = true;
