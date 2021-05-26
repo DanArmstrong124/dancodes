@@ -6,14 +6,7 @@ var storageFirstVisit = localStorage.getItem('first');
 var firstvisit = true;
 
 setInterval(function() {
-    if (parseInt(localStorage.getItem('currentpints') > 0)) {
         storageCurrentPints = parseInt(localStorage.getItem('currentpints'));
-    }
-    else if ((parseInt(localStorage.getItem('currentpints') < 1)) || (parseInt(localStorage.getItem('currentpints').isNaN))){
-        setTimeout(function() {
-            parseInt(localStorage.setItem('currentpints', 0));
-        }, 50);
-    }
 }, 1000);
 
 var ready = true;
@@ -29,6 +22,7 @@ setTimeout(function() {
     if (storageFirstVisit !== false){
         if (firstvisit === true) {
             currentpints = 0;
+            parseInt(localStorage.setItem('currentpints', 0);
             localStorage.setItem('first', false);
         }
     }
