@@ -28,19 +28,19 @@ var totalpints = 124;
 var currentpints = storageCurrentPints;
 //will be linked to database
 
-setTimeout(function() {
-    if (storageFirstVisit !== false){
-        if (firstvisit === true) {
+//setTimeout(function() {
+    //if (storageFirstVisit !== false){
+        //if (firstvisit === true) {
             //currentpints = 0;
-            parseInt(localStorage.setItem('currentpints', 0));
-            localStorage.setItem('first', false);
-        }
-    }
-    else if (storageFirstVisit === false) {
-        storageCurrentPints = parseInt(localStorage.getItem('currentpints'));
-        currentpints = storageCurrentPints;
-    }
-}, 500);
+            //parseInt(localStorage.setItem('currentpints', 0));
+            //localStorage.setItem('first', false);
+        //}
+    //}
+    //else if (storageFirstVisit === false) {
+        //storageCurrentPints = parseInt(localStorage.getItem('currentpints'));
+        //currentpints = storageCurrentPints;
+    //}
+//}, 500);
 
 var fillsofar = storageCurrentPints / totalpints * 100;
 
