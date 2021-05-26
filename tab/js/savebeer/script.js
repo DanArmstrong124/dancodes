@@ -28,12 +28,12 @@ var totalpints = 124;
 var currentpints = storageCurrentPints;
 //will be linked to database
 
-setTimeout(function() {
-    if (localStorage.getItem('first') !== false){
-            localStorage.setItem('first', false);
-            location.reload();
-    }
-}, 50);
+//setTimeout(function() {
+    //if (localStorage.getItem('first') !== false){
+            //localStorage.setItem('first', false);
+            //location.reload();
+    //}
+//}, 50);
 
 var fillsofar = storageCurrentPints / totalpints * 100;
 
