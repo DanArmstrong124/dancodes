@@ -29,7 +29,7 @@ var currentpints = storageCurrentPints;
 //will be linked to database
 
 setTimeout(function() {
-    if (storageFirstVisit !== false){
+    if (localStorage.getItem('first') !== false){
         if (firstvisit === true) {
             localStorage.setItem('first', false);
             location.reload();
