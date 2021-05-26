@@ -6,8 +6,8 @@ var storageFirstVisit = localStorage.getItem('first');
 var firstvisit = true;
 
 setInterval(function() {
-        storageCurrentPints = parseInt(localStorage.getItem('currentpints'));
-}, 1000);
+        storageCurrentPints = parseInt(localStorage.getItem('currentpints')); //Gets storage for pints
+}, 100);
 
 var ready = true;
 //to set the timeouts
@@ -21,7 +21,7 @@ var currentpints = storageCurrentPints;
 setTimeout(function() {
     if (storageFirstVisit !== false){
         if (firstvisit === true) {
-            currentpints = 0;
+            //currentpints = 0;
             parseInt(localStorage.setItem('currentpints', 0));
             localStorage.setItem('first', false);
         }
@@ -29,7 +29,7 @@ setTimeout(function() {
     else if (storageFirstVisit === false) {
         currentpints = storageCurrentPints;
     }
-}, 50);
+}, 500);
 
 var fillsofar = storageCurrentPints / totalpints * 100;
 
@@ -37,9 +37,9 @@ btn.addEventListener("click", function() {
     if (ready === true) {
         ready = false;
         //fillsofar = storageCurrentPints / totalpints * 100;
-        storageCurrentPints = parseInt(localStorage.getItem('currentpints'));
-        currentpints = storageCurrentPints;
-        localStorage.setItem('currentpints', currentpints + 1);
+        //storageCurrentPints = parseInt(localStorage.getItem('currentpints'));
+        currentpints = storageCurrentPints; //CurrentPints = StoragePints
+        localStorage.setItem('currentpints', currentpints + 1); //Storage pints = current pints + 1
         //localStorage.setItem('currentpints', parseInt(storageCurrentPints + 1));
         //storageCurrentPints = parseInt(localStorage.getItem('currentpints'));
         fillsofar = parseInt(localStorage.getItem('currentpints')) /  totalpints * 100;
