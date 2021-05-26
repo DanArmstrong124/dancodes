@@ -4,6 +4,13 @@ var pintsleft = document.getElementById("pintsleft");
 var storageCurrentPints = parseInt(localStorage.getItem('currentpints'));
 var storageFirstVisit = localStorage.getItem('first');
 var firstvisit = true;
+var foam1 = document.getElementById("foam1");
+var foam2 = document.getElementById("foam2");
+
+setTimeout(function() {
+    foam1.style.opacity = 0%;
+    foam2.style.opacity = 0%;
+}, 10);
 
 setInterval(function() {
     if (isNaN(currentpints)){
@@ -64,6 +71,10 @@ btn.addEventListener("click", function() {
 setInterval(function(){
     fill.style.height = fillsofar + "%";
     pintsleft.innerHTML = parseInt(localStorage.getItem('currentpints'));
+    if (currentpints > 120) {
+        foam1.style.opacity = 100%;
+        foam2.style.opacity = 100%;
+    }
 
     //if ((currentpints > 9) || (currentpints < 100)){
         //pintsleft.style.fontSize = smaller
