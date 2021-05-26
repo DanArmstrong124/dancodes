@@ -30,10 +30,8 @@ var currentpints = storageCurrentPints;
 
 setTimeout(function() {
     if (localStorage.getItem('first') !== false){
-        if (firstvisit === true) {
             localStorage.setItem('first', false);
             location.reload();
-        }
     }
 }, 50);
 
