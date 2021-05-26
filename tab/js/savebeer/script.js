@@ -6,7 +6,14 @@ var storageFirstVisit = localStorage.getItem('first');
 var firstvisit = true;
 
 setInterval(function() {
-    storageCurrentPints = parseInt(localStorage.getItem('currentpints'));
+    if (parseInt(localStorage.getItem('currentpints') > 0){
+        storageCurrentPints = parseInt(localStorage.getItem('currentpints'));
+    }
+    else if ((parseInt(localStorage.getItem('currentpints') < 1)) || (parseInt(localStorage.getItem('currentpints').isNaN))){
+        setTimeout(function() {
+            parseInt(localStorage.setItem('currentpints', 0);
+        }, 50);
+    }
 }, 1000);
 
 var ready = true;
