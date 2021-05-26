@@ -6,6 +6,15 @@ var storageFirstVisit = localStorage.getItem('first');
 var firstvisit = true;
 
 setInterval(function() {
+    if (isNaN(currentpints)){
+        currentpints = 0;
+    }
+    if (isNaN(storageCurrentPints)){
+        parseInt(localStorage.setItem('currentpints', 0));
+    }
+}, 50);
+
+setInterval(function() {
     currentpints = storageCurrentPints;
         //storageCurrentPints = parseInt(localStorage.getItem('currentpints')); //Gets storage for pints
 }, 100);
