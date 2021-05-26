@@ -11,7 +11,7 @@ setInterval(function() {
     }
     else if ((parseInt(localStorage.getItem('currentpints') < 1)) || (parseInt(localStorage.getItem('currentpints').isNaN))){
         setTimeout(function() {
-            parseInt(localStorage.setItem('currentpints', 0);
+            parseInt(localStorage.setItem('currentpints', 0));
         }, 50);
     }
 }, 1000);
