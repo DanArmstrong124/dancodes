@@ -22,7 +22,7 @@ setTimeout(function() {
     if (storageFirstVisit !== false){
         if (firstvisit === true) {
             currentpints = 0;
-            parseInt(localStorage.setItem('currentpints', 0);
+            parseInt(localStorage.setItem('currentpints', 0));
             localStorage.setItem('first', false);
         }
     }
