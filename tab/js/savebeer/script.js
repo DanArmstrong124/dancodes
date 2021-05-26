@@ -6,7 +6,7 @@ var storageFirstVisit = localStorage.getItem('first');
 var firstvisit = true;
 
 setInterval(function() {
-    if (parseInt(localStorage.getItem('currentpints') > 0){
+    if (parseInt(localStorage.getItem('currentpints') > 0)) {
         storageCurrentPints = parseInt(localStorage.getItem('currentpints'));
     }
     else if ((parseInt(localStorage.getItem('currentpints') < 1)) || (parseInt(localStorage.getItem('currentpints').isNaN))){
