@@ -86,3 +86,6 @@ setInterval(function(){
 //calc time between
 //if 0 seconds left: ready = true
 //stops refreshing to spam
+
+
+//add head on pint
