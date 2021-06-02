@@ -46,7 +46,7 @@ var fillsofar = storageCurrentPints / totalpints * 100;
 
 btn.addEventListener("click", function() {
     if (ready === true) {
-        ready = false;
+        ready = true;
         //fillsofar = storageCurrentPints / totalpints * 100;
         //storageCurrentPints = parseInt(localStorage.getItem('currentpints'));
         //currentpints = storageCurrentPints; //CurrentPints = StoragePints
@@ -56,16 +56,16 @@ btn.addEventListener("click", function() {
         fillsofar = parseInt(localStorage.getItem('currentpints')) /  totalpints * 100;
         fill.style.height = fillsofar + "%";
         pintsleft.innerHTML = parseInt(localStorage.getItem('currentpints'));
-        setTimeout(function() {
+        //setTimeout(function() {
             //15 min timeout to turn the button back on
-            ready = true;
-        }, 900000);
+          //  ready = true;
+        //}, 900000);
         //add 1 to pints and set to false
-    }
-    else if (ready === false) {
-        alert("You can only have one pint every 15 mins.")
+    //}
+    //else if (ready === false) {
+      //  alert("You can only have one pint every 15 mins.")
         //announce they have hit limit for the day/week/hour
-    }
+   // }
 });
 
 setInterval(function(){
