@@ -45,8 +45,8 @@ var currentpints = storageCurrentPints;
 var fillsofar = storageCurrentPints / totalpints * 100;
 
 btn.addEventListener("click", function() {
-    if (ready === true) {
-        ready = true;
+    //if (ready === true) {
+      //  ready = true;
         //fillsofar = storageCurrentPints / totalpints * 100;
         //storageCurrentPints = parseInt(localStorage.getItem('currentpints'));
         //currentpints = storageCurrentPints; //CurrentPints = StoragePints
@@ -99,4 +99,4 @@ setInterval(function(){
 //stops refreshing to spam
 
 
-//add head on pint
+// ADD PLUS AND MINUS BUTTON
