@@ -51,6 +51,7 @@ btn.addEventListener("click", function() {
         //storageCurrentPints = parseInt(localStorage.getItem('currentpints'));
         //currentpints = storageCurrentPints; //CurrentPints = StoragePints
         localStorage.setItem('currentpints', currentpints + 1); //Storage pints = current pints + 1
+        currentpints = currentpints + 1;
         //localStorage.setItem('currentpints', parseInt(storageCurrentPints + 1));
         //storageCurrentPints = parseInt(localStorage.getItem('currentpints'));
         fillsofar = parseInt(localStorage.getItem('currentpints')) /  totalpints * 100;
