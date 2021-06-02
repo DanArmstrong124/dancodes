@@ -1,0 +1,56 @@
+Timer for TAB
+
+1. On click, get current date & time
+2. Save current date & time into a var
+3. Save the date as a number such as: 01042021 = First of April 2021
+4. Save the time as a number such as 001000 = 10 past midnight
+5. Add 001500 to the number and save as diff time
+6. Fail safe if the diff time = --60-- then + 4000 to make sure the hour is always correct
+7. Save all vars to local storage after appending the dates and times to make a number such as: 01042021001000
+8. Set up timer that will only set Ready = True when the current date & time number appended is more than the diff number:
+ - 01042021001000 = First click
+ - 01042021002500 = Diff time (When ready will = true again)
+ - 01042021012500 = Current time
+ = if current time > diff time : ready = true.
+
+ EXAMPLE:
+
+ now = get.date.
+ if now.day === 01 : APPEND onto current (01)
+ if now.month === Apr : APPEND onto current (0104)
+ if now.year === 2021 : APPEND onto current (01042021)
+
+ if now.hour === 15 : APPEND onto current (0104202115)
+ if now.minute === 30 : APPEND onto current (010420211530)
+ if now.second === 25 : APPEND onto current (01042021153025)
+
+ first_click = 01042021153025
+ time_count = first_click + 1500
+ // time_count = 01042021154525
+ // Save to local storage
+
+
+ // Log back into app
+
+ now = get.date.
+ if now.day === 01 : APPEND onto current (01)
+ if now.month === Apr : APPEND onto current (0104)
+ if now.year === 2021 : APPEND onto current (01042021)
+
+ if now.hour === 16 : APPEND onto current (0104202116)
+ if now.minute === 00 : APPEND onto current (010420211600)
+ if now.second === 00 : APPEND onto current (01042021160000)
+
+return_num (On sign in) = 01042021160000
+
+if return_num >== time_count : READY = true
+else : interval updating return_num each second.
+
+
+// MAYBE:
+
+Each second:
+- clear return_num to blank.
+- get the current time and date
+- append to return_num
+- check if ready === true
