@@ -74,6 +74,14 @@ addit.addEventListener("click", function() {
    // }
 });
 
+removeit.addEventListener("click", function() {
+        localStorage.setItem('currentpints', currentpints - 1); //Storage pints = current pints + 1
+        currentpints = currentpints - 1;
+        fillsofar = parseInt(localStorage.getItem('currentpints')) /  totalpints * 100;
+        fill.style.height = fillsofar + "%";
+        pintsleft.innerHTML = parseInt(localStorage.getItem('currentpints'));
+});
+
 setInterval(function(){
     fill.style.height = fillsofar + "%";
     pintsleft.innerHTML = parseInt(localStorage.getItem('currentpints'));
