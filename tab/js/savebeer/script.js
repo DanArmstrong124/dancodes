@@ -15,9 +15,11 @@ setTimeout(function() {
 setInterval(function() {
     if (isNaN(currentpints)){
         currentpints = 0;
+        location.reload();
     }
     if (isNaN(storageCurrentPints)){
         parseInt(localStorage.setItem('currentpints', 0));
+        location.reload();
     }
 }, 50);
 
