@@ -85,9 +85,13 @@ removeit.addEventListener("click", function() {
 setInterval(function(){
     fill.style.height = fillsofar + "%";
     pintsleft.innerHTML = parseInt(localStorage.getItem('currentpints'));
-    if (storageCurrentPints > 120) {
+    if (storageCurrentPints >= 120) {
         foam1.style.opacity = "1";
         foam2.style.opacity = "1";
+    }
+    if (storageCurrentPints <= 119) {
+        foam1.style.opacity = "0";
+        foam2.style.opacity = "0";
     }
 
     //if ((currentpints > 9) || (currentpints < 100)){
