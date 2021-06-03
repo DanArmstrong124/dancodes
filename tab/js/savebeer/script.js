@@ -24,6 +24,7 @@ setInterval(function() {
 }, 50);
 
 setInterval(function() {
+    storageCurrentPints = parseInt(localStorage.getItem('currentpints'));
     currentpints = storageCurrentPints;
         //storageCurrentPints = parseInt(localStorage.getItem('currentpints')); //Gets storage for pints
 }, 100);
@@ -52,7 +53,6 @@ btn.addEventListener("click", function() {
         //fillsofar = storageCurrentPints / totalpints * 100;
         //storageCurrentPints = parseInt(localStorage.getItem('currentpints'));
         //currentpints = storageCurrentPints; //CurrentPints = StoragePints
-        currentpints = storageCurrentPints;
         localStorage.setItem('currentpints', currentpints + 1); //Storage pints = current pints + 1
         currentpints = currentpints + 1;
         //localStorage.setItem('currentpints', parseInt(storageCurrentPints + 1));
