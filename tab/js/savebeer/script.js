@@ -6,6 +6,8 @@ var storageFirstVisit = localStorage.getItem('first');
 var firstvisit = true;
 var foam1 = document.getElementById("foam1");
 var foam2 = document.getElementById("foam2");
+var addit = document.getElementById("addit");
+var removeit = document.getElementById("removeit");
 
 setTimeout(function() {
     foam1.style.opacity = "0";
@@ -47,7 +49,7 @@ var currentpints = storageCurrentPints;
 
 var fillsofar = storageCurrentPints / totalpints * 100;
 
-btn.addEventListener("click", function() {
+addit.addEventListener("click", function() {
     //if (ready === true) {
       //  ready = true;
         //fillsofar = storageCurrentPints / totalpints * 100;
