@@ -4,6 +4,8 @@ achievements graphics
 Add pub saved counter inside of achievements
 Other glasses all linked in
 
+custom alert messages
+
 achievements:
 
 TOP - Pubs saved total | Pints total
