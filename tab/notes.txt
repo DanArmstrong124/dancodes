@@ -1,5 +1,3 @@
-
-30 second timers on buttons
 achievements buttons
 achievements graphics
 Add audio.js
