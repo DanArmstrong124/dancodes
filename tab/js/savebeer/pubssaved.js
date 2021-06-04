@@ -15,4 +15,4 @@ setInterval(function(){
         currentpubssaved = pubssaved
         pubsavedmodalnumber.innerText("Congratulations, you have saved a total of " + currentpubssaved + " pubs!")
         }
-},50);
+},500);
