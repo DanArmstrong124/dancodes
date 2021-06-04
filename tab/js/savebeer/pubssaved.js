@@ -1,6 +1,6 @@
 var pubssaved = parseInt(localStorage.getItem('savedpubs'));
 var currentpubssaved = pubssaved;
-var pubsavedmodal = document.getElementById("pubsavedmodal");
+var pubsavedmodal = new bootstrap.Modal(document.getElementById("pubsavedmodal"), {});
 var pubsavedmodalnumber = document.getElementById("pubsavedmodalnumber");
 
 setInterval(function(){
