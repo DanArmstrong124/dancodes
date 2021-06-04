@@ -1,5 +1,7 @@
 var pubssaved = parseInt(localStorage.getItem('savedpubs'));
 var currentpubssaved = pubssaved;
+var pubsavedmodal = document.getElementById("pubsavedmodal");
+var pubsavedmodalnumber = document.getElementById("pubsavedmodalnumber");
 
 setInterval(function(){
     if (isNaN(pubssaved)){
@@ -11,6 +13,7 @@ setInterval(function(){
         currentpints = storageCurrentPints;
         parseInt(localStorage.setItem('savedpubs', currentpubssaved + 1));
         currentpubssaved = pubssaved
-        alert("Congratultions, you have now saved " + (currentpubssaved + 1) + " pubs! - Please check the achievements for more!")
-    }
+        pubsavedmodalnumber.innerHTML("Congratulations, you have saved a total of " + currentpubssaved + " pubs!")
+        pubsavedmodal.modal("show");
+        }
 },50);
