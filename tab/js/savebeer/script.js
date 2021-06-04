@@ -8,6 +8,7 @@ var foam1 = document.getElementById("foam1");
 var foam2 = document.getElementById("foam2");
 var addit = document.getElementById("addit");
 var removeit = document.getElementById("removeit");
+var removeitconfirm = document.getElementById("removeitconfirm");
 
 setTimeout(function() {
     foam1.style.opacity = "0";
@@ -74,7 +75,7 @@ addit.addEventListener("click", function() {
    // }
 });
 
-removeit.addEventListener("click", function() {
+removeitconfirm.addEventListener("click", function() {
         localStorage.setItem('currentpints', currentpints - 1); //Storage pints = current pints + 1
         currentpints = currentpints - 1;
         fillsofar = parseInt(localStorage.getItem('currentpints')) /  totalpints * 100;
