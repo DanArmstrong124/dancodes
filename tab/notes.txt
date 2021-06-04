@@ -6,3 +6,14 @@ Other glasses all linked in
 
 
 Add pub saved counter inside of achievements
+
+
+achievements:
+
+TOP - Pubs saved total | Pints total
+
+First Pint - Drink 1 Pint
+Double Parked - Drink 2 Pints
+"Out Out" - Drink 10 Pints
+Weekender - Drink 50 Pints
+The Local - Save 1 Pub

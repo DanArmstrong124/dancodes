@@ -2,6 +2,7 @@ var fill = document.getElementById("pintdrink");
 var btn = document.getElementById("btnpress");
 var pintsleft = document.getElementById("pintsleft");
 var storageCurrentPints = parseInt(localStorage.getItem('currentpints'));
+var storageTotalPints = parseInt(localStorage.getItem('totalpintsnum'));
 var storageFirstVisit = localStorage.getItem('first');
 var firstvisit = true;
 var foam1 = document.getElementById("foam1");
@@ -20,8 +21,16 @@ setInterval(function() {
         currentpints = 0;
         location.reload();
     }
+    if (isNaN(totalpintsnum)){
+        totalpintsnum = 0;
+        location.reload();
+    }
     if (isNaN(storageCurrentPints)){
         parseInt(localStorage.setItem('currentpints', 0));
+        location.reload();
+    }
+    if (isNaN(storageTotalPints)){
+        parseInt(localStorage.setItem('totalpintsnum', 0));
         location.reload();
     }
 }, 50);
@@ -29,6 +38,9 @@ setInterval(function() {
 setInterval(function() {
     storageCurrentPints = parseInt(localStorage.getItem('currentpints'));
     currentpints = storageCurrentPints;
+
+    storageTotalPints = parseInt(localStorage.getItem('totalpintsnum'));
+    totalpintsnum = storageTotalPints;
         //storageCurrentPints = parseInt(localStorage.getItem('currentpints')); //Gets storage for pints
 }, 100);
 
@@ -58,6 +70,8 @@ addit.addEventListener("click", function() {
         //currentpints = storageCurrentPints; //CurrentPints = StoragePints
         localStorage.setItem('currentpints', currentpints + 1); //Storage pints = current pints + 1
         currentpints = currentpints + 1;
+        localStorage.setItem('totalpintsnum', totalpintsnum + 1); //Storage pints = current pints + 1
+        totalpintsnum = totalpintsnum + 1;
         //localStorage.setItem('currentpints', parseInt(storageCurrentPints + 1));
         //storageCurrentPints = parseInt(localStorage.getItem('currentpints'));
         fillsofar = parseInt(localStorage.getItem('currentpints')) /  totalpints * 100;
@@ -78,6 +92,8 @@ addit.addEventListener("click", function() {
 removeitconfirm.addEventListener("click", function() {
         localStorage.setItem('currentpints', currentpints - 1); //Storage pints = current pints + 1
         currentpints = currentpints - 1;
+        localStorage.setItem('totalpints', totalpintsnum - 1); //Storage pints = current pints + 1
+        totalpints = totalpintsnum - 1;
         fillsofar = parseInt(localStorage.getItem('currentpints')) /  totalpints * 100;
         fill.style.height = fillsofar + "%";
         pintsleft.innerHTML = parseInt(localStorage.getItem('currentpints'));
