@@ -245,7 +245,13 @@ Needless to say, this isn’t a session drinking challenge. No one should try to
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">You have saved another pub!</div>
+      <div class="modal-body">
+          <div class="row">
+              <div class="col-6" id="totpinmod"></div>
+              <div class="col-6" id="totpubmod"></div>
+          </div>
+          <hr>
+      </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
@@ -284,5 +290,6 @@ position: absolute;
         <script src="js/savebeer/audio.js"></script>
         <script src="js/savebeer/pubssaved.js"></script>
         <script src="js/savebeer/failsafe.js"></script>
+        <script src="js/savebeer/achievements.js"></script>
     </body>
 </html>
