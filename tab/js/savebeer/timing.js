@@ -10,7 +10,7 @@ removeitconfirm.addEventListener("click", function(){
     removetimer.style.display = "block";
 
     setInterval(function(){
-        removetimer.html = rtimecount;
+        removetimer.innerHTML = rtimecount;
         rtimecount = rtimecount - 1;
         if (rtimecount <= 0) {
                 removeit.style.display = "block";
