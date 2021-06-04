@@ -24,6 +24,10 @@ setInterval(function() {
         parseInt(localStorage.setItem('currentpints', 0));
         location.reload();
     }
+    if (isNaN(storageSavedPubs)){
+        parseInt(localStorage.setItem('savedpubs', 0));
+        location.reload();
+    }
 }, 50);
 
 setInterval(function() {
