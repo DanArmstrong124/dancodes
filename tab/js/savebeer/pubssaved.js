@@ -11,4 +11,4 @@ setInterval(function(){
         parseInt(localStorage.setItem('savedpubs', currentpubssaved + 1));
         currentpubssaved = pubssaved
     }
-},50)
+},50);
