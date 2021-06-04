@@ -7,7 +7,8 @@ setInterval(function(){
         location.reload();
     }
     if (currentpints >= 124) {
-        currentpints = 0;
+        storageCurrentPints = parseInt(localStorage.setItem('currentpints', 0));
+        currentpints = storageCurrentPints;
         parseInt(localStorage.setItem('savedpubs', currentpubssaved + 1));
         currentpubssaved = pubssaved
     }
