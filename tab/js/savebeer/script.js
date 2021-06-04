@@ -21,16 +21,13 @@ setInterval(function() {
         currentpints = 0;
         location.reload();
     }
-    if (isNaN(totalpintsnum)){
-        totalpintsnum = 0;
-        location.reload();
-    }
     if (isNaN(storageCurrentPints)){
         parseInt(localStorage.setItem('currentpints', 0));
         location.reload();
     }
     if (isNaN(storageTotalPints)){
         parseInt(localStorage.setItem('totalpintsnum', 0));
+        totalpintsnum = 0;
         location.reload();
     }
 }, 50);
