@@ -1,12 +1,9 @@
+MODAL for pubs saved
 achievements buttons
 achievements modals
 achievements graphics
-124 = 1 pub concept
-Other glasses all linked in
-
-
 Add pub saved counter inside of achievements
-
+Other glasses all linked in
 
 achievements:
 
