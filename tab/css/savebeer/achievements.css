@@ -1,11 +1,10 @@
 .picture-area {
-    background-color: yellow;
 }
 
 .name-area {
-    background-color: grey;
+    font-weight: bold;
 }
 
 .description-area {
-    background-color: lightblue;
+    font-size: 15px;
 }
