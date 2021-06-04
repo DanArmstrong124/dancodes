@@ -3,7 +3,12 @@ setInterval(function(){
         removeit.style.display = "none";
     }
     if (currentpints >= 1) {
-        removeit.style.display = "block"
+        if (removetimer.style.display === "none"){
+            removeit.style.display = "block";
+        }
+        if (removetimer.style.display === "block"){
+            removeit.style.display = "none";
+        }
     }
 },1000);
 
