@@ -26,7 +26,7 @@ addit.addEventListener("click", function(){
     addtimer.style.display = "block";
 
         setInterval(function(){
-        addtimer.html = atimecount;
+        addtimer.innerHTML = atimecount;
         atimecount = atimecount - 1;
         if (atimecount <= 0) {
                 addit.style.display = "block";
