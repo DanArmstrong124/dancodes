@@ -1,4 +1,3 @@
-MODAL for pubs saved (Issue with refreshing)
 achievements buttons
 achievements modals
 achievements graphics
