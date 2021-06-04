@@ -14,6 +14,6 @@ setInterval(function(){
         parseInt(localStorage.setItem('savedpubs', currentpubssaved + 1));
         currentpubssaved = pubssaved
         pubsavedmodalnumber.innerHTML("Congratulations, you have saved a total of " + currentpubssaved + " pubs!")
-        pubsavedmodal.modal("show");
+        pubsavedmodal.show();
         }
 },50);
