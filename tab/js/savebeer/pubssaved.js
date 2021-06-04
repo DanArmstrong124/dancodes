@@ -11,6 +11,6 @@ setInterval(function(){
         currentpints = storageCurrentPints;
         parseInt(localStorage.setItem('savedpubs', currentpubssaved + 1));
         currentpubssaved = pubssaved
-        alert("Congratultions, you have now saved " + currentpubssaved + " pubs! - Please check the achievements for more!")
+        alert("Congratultions, you have now saved " + (currentpubssaved + 1) + " pubs! - Please check the achievements for more!")
     }
 },50);
