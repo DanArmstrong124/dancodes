@@ -10,6 +10,6 @@ setInterval(function(){
             removeit.style.display = "none";
         }
     }
-},1000);
+},10);
 
 
