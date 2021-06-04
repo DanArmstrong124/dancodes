@@ -17,6 +17,6 @@ setInterval(function(){
 },500);
 
 document.onreadystatechange = function () {
-  pubsavedmodalnumber.innerText("Congratulations, you have saved a total of " + pubssaved + " pubs!")
+  pubsavedmodalnumber.innerText("Congratulations, you have saved a total of " + pubssaved + " pubs!");
   pubsavedmodal.show();
 };
