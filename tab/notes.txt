@@ -14,3 +14,8 @@ Double Parked - Drink 2 Pints
 "Out Out" - Drink 10 Pints
 Weekender - Drink 50 Pints
 The Local - Save 1 Pub
+Big Spender - Drink 150 Pints
+Patriot - Save 3 Pubs
+Iron Liver - Drink 400 Pints
+(HIDDEN) Hero - Save 5 Pubs
+(HIDDEN) AA - Drink 1000 Pints
