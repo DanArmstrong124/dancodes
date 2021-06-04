@@ -13,10 +13,10 @@ setInterval(function(){
         currentpints = storageCurrentPints;
         parseInt(localStorage.setItem('savedpubs', currentpubssaved + 1));
         currentpubssaved = pubssaved
-        pubsavedmodalnumber.innerText("Congratulations, you have saved a total of " + currentpubssaved + " pubs!")
         }
 },500);
 
 document.onreadystatechange = function () {
+  pubsavedmodalnumber.innerText("Congratulations, you have saved a total of " + currentpubssaved + " pubs!")
   pubsavedmodal.show();
 };

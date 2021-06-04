@@ -73,9 +73,6 @@ addit.addEventListener("click", function() {
         localStorage.setItem('totalpintsnum', totalpintsnum + 1); //Storage pints = current pints + 1
         totalpintsnum = totalpintsnum + 1;
 
-        if (currentpints >= 124) {
-            pubsavedmodal.show();
-        };
         //localStorage.setItem('currentpints', parseInt(storageCurrentPints + 1));
         //storageCurrentPints = parseInt(localStorage.getItem('currentpints'));
         fillsofar = parseInt(localStorage.getItem('currentpints')) /  totalpints * 100;
