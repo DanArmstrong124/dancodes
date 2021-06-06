@@ -125,6 +125,7 @@ setInterval(function(){
 
 setInterval(function() {
     if (instructions === "true"){
-        
+        localStorage.setItem('firsttime', false);
+        instructions.show();
     }
 },1000);
