@@ -9,7 +9,7 @@ setInterval(function(){
 loginbtn.addEventListener("click", function(){
     logincreds = logincredsinput;
     localStorage.setItem('testerpass', logincreds);
-    if (logincreds === "yellowsubmarine"){
+    if (logincreds === "tabdev"){
         alert("Login successful, please re-input the url you are looking for!")
     }
     else{
