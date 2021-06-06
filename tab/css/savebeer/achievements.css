@@ -1,7 +1,11 @@
-
+.picture-for-area {
+    height: 105px;
+}
 
 .name-area {
     font-weight: bold;
+    margin-top: 8%;
+    font-size: 27px;
 }
 
 .description-area {
