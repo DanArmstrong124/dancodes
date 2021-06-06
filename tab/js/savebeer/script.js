@@ -5,11 +5,13 @@ var storageCurrentPints = parseInt(localStorage.getItem('currentpints'));
 var storageTotalPints = parseInt(localStorage.getItem('totalpintsnum'));
 var storageFirstVisit = localStorage.getItem('first');
 var firstvisit = true;
+var firsttime = localStorage.getItem('firsttime');
 var foam1 = document.getElementById("foam1");
 var foam2 = document.getElementById("foam2");
 var addit = document.getElementById("addit");
 var removeit = document.getElementById("removeit");
 var removeitconfirm = document.getElementById("removeitconfirm");
+var instructions = new bootstrap.Modal(document.getElementById('instruct'), options);
 
 setTimeout(function() {
     foam1.style.opacity = "0";
@@ -19,6 +21,10 @@ setTimeout(function() {
 setInterval(function() {
     if (isNaN(currentpints)){
         currentpints = 0;
+        location.reload();
+    }
+    if ((instructions != "true") && (instructions != "false")){
+        localStorage.setItem('firsttime', true)
         location.reload();
     }
     if (isNaN(storageCurrentPints)){
@@ -117,19 +123,8 @@ setInterval(function(){
 
 //Every 0.1s the pint will refresh to keep filling every persons clicks
 
-
-//NOTES
-
-//Set a storage for time left until 15
-//On btn click, get day and time.
-//get 15 mins in the future
-//Work out the time between them
-//Set 15 min time to storage var
-//on re-open bring 15 min time back to screen
-//calc current time and date on re-open
-//calc time between
-//if 0 seconds left: ready = true
-//stops refreshing to spam
-
-
-// ADD PLUS AND MINUS BUTTON
+setInterval(function() {
+    if (instructions === "true"){
+        
+    }
+},1000);
