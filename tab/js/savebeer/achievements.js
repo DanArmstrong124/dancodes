@@ -155,10 +155,6 @@ setInterval(function() {
     if (fp === "true") {
         firpic.style.display = "none";
         firpicu.style.display = "block";
-        if (ffp === "true") {
-            localStorage.setItem('ffirstpint', false);
-            alert("Unlocked FIRST PINT achievement");
-        }
     }
     if (dp === "true") {
         dobpic.style.display = "none";
@@ -234,3 +230,12 @@ setInterval(function() {
         localStorage.setItem('hero', true);
     }
 },50);
+
+var addit = document.getElementById("addit");
+
+addit.addEventListener("click", function(){
+    if ((fp === "true") && (ffp === "true")) {
+            localStorage.setItem('ffirstpint', false);
+            alert("Unlocked FIRST PINT achievement");
+        }
+});
