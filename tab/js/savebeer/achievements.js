@@ -196,38 +196,112 @@ setInterval(function updateAch() {
         tabtext.style.display = "none";
         tabtextu.style.display = "block";
     }
+    if (fp === "false") {
+        firpic.style.display = "block";
+        firpicu.style.display = "none";
+    }
+    if (dp === "false") {
+        dobpic.style.display = "block";
+        dobpicu.style.display = "none";
+    }
+    if (oo === "false") {
+        outpic.style.display = "block";
+        outpicu.style.display = "none";
+    }
+    if (wk === "false") {
+        wekpic.style.display = "block";
+        wekpicu.style.display = "none";
+    }
+    if (tl === "false") {
+        locpic.style.display = "block";
+        locpicu.style.display = "none";
+    }
+    if (bs === "false") {
+        bigpic.style.display = "block";
+        bigpicu.style.display = "none";
+    }
+    if (pa === "false") {
+        patpic.style.display = "block";
+        patpicu.style.display = "none";
+    }
+    if (il === "false") {
+        ironpic.style.display = "block";
+        ironpicu.style.display = "none";
+    }
+    if (hr === "false") {
+        heropic.style.display = "block";
+        heropicu.style.display = "none";
+        herotext.style.display = "block";
+        herotextu.style.display = "none";
+    }
+    if (ta === "false") {
+        tabpic.style.display = "block";
+        tabpicu.style.display = "none";
+        tabtext.style.display = "block";
+        tabtextu.style.display = "none";
+    }
 },100);
 
 setInterval(function() {
     if (storageTotalPints >= 1){
         localStorage.setItem('firstpint', true);
     }
+    if (storageTotalPints <= 0){
+        localStorage.setItem('firstpint', false);
+    }
     if (storageTotalPints >= 2){
         localStorage.setItem('doubleparked', true);
+    }
+    if (storageTotalPints <= 1){
+        localStorage.setItem('doubleparked', false);
     }
     if (storageTotalPints >= 10){
         localStorage.setItem('outout', true);
     }
+    if (storageTotalPints <= 9){
+        localStorage.setItem('outout', false);
+    }
     if (storageTotalPints >= 50){
         localStorage.setItem('weekender', true);
+    }
+    if (storageTotalPints <= 49){
+        localStorage.setItem('weekender', false);
     }
     if (storageTotalPints >= 150){
         localStorage.setItem('bigspender', true);
     }
+    if (storageTotalPints <= 149){
+        localStorage.setItem('bigspender', false);
+    }
     if (storageTotalPints >= 400){
         localStorage.setItem('ironliver', true);
+    }
+    if (storageTotalPints <= 399){
+        localStorage.setItem('ironliver', false);
     }
     if (storageTotalPints >= 1000){
         localStorage.setItem('timeatthebar', true);
     }
+    if (storageTotalPints <= 999){
+        localStorage.setItem('outout', false);
+    }
     if (pubssaved >= 1){
         localStorage.setItem('thelocal', true);
+    }
+    if (pubssaved <= 0){
+        localStorage.setItem('thelocal', false);
     }
     if (pubssaved >= 3){
         localStorage.setItem('patriot', true);
     }
+    if (pubssaved <= 2){
+        localStorage.setItem('patriot', false);
+    }
     if (pubssaved >= 5){
         localStorage.setItem('hero', true);
+    }
+    if (pubssaved <= 4){
+        localStorage.setItem('hero', false);
     }
 },50);
 
