@@ -398,5 +398,3 @@ function updateAch() {
         tabtextu.style.display = "none";
     }
 }
-
-ach.addEventListener("click", updateAch());
