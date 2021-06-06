@@ -46,6 +46,18 @@ var il = localStorage.getItem('ironliver');
 var hr = localStorage.getItem('hero');
 var ta = localStorage.getItem('timeatthebar');
 
+var ffp = localStorage.getItem('ffirstpint');
+var fdp = localStorage.getItem('fdoubleparked');
+var foo = localStorage.getItem('foutout');
+var fwk = localStorage.getItem('fweekender');
+var ftl = localStorage.getItem('fthelocal');
+var fbs = localStorage.getItem('fbigspender');
+var fpa = localStorage.getItem('fpatriot');
+var fil = localStorage.getItem('fironliver');
+var fhr = localStorage.getItem('fhero');
+var fta = localStorage.getItem('ftimeatthebar');
+
+
 
 setInterval(function(){
     if ((fp !== "true") && (fp !== "false")){
@@ -88,7 +100,50 @@ setInterval(function(){
         localStorage.setItem('timeatthebar', false);
         location.reload();
     }
-},500);
+},50);
+
+setInterval(function(){
+    if ((ffp !== "true") && (ffp !== "false")){
+        localStorage.setItem('ffirstpint', true);
+        location.reload();
+    }
+    if ((fdp !== "true") && (fdp !== "false")){
+        localStorage.setItem('fdoubleparked', true);
+        location.reload();
+    }
+    if ((foo !== "true") && (foo !== "false")){
+        localStorage.setItem('foutout', true);
+        location.reload();
+    }
+    if ((fwk !== "true") && (fwk !== "false")){
+        localStorage.setItem('fweekender', true);
+        location.reload();
+    }
+    if ((ftl !== "true") && (ftl !== "false")){
+        localStorage.setItem('fthelocal', true);
+        location.reload();
+    }
+    if ((fbs !== "true") && (fbs !== "false")){
+        localStorage.setItem('fbigspender', true);
+        location.reload();
+    }
+    if ((fpa !== "true") && (fpa !== "false")){
+        localStorage.setItem('fpatriot', true);
+        location.reload();
+    }
+    if ((fil !== "true") && (fil !== "false")){
+        localStorage.setItem('fironliver', true);
+        location.reload();
+    }
+    if ((fhr !== "true") && (fhr !== "false")){
+        localStorage.setItem('fhero', true);
+        location.reload();
+    }
+    if ((fta !== "true") && (fta !== "false")){
+        localStorage.setItem('ftimeatthebar', true);
+        location.reload();
+    }
+},50);
 
 
 setInterval(function() {
@@ -100,6 +155,10 @@ setInterval(function() {
     if (fp === "true") {
         firpic.style.display = "none";
         firpicu.style.display = "block";
+        if (ffp === "true") {
+            localStorage.setItem('ffirstpint', false);
+            alert("Unlocked FIRST PINT achievement");
+        }
     }
     if (dp === "true") {
         dobpic.style.display = "none";
