@@ -151,7 +151,7 @@ setInterval(function() {
     totpubmod.innerHTML = pubssaved;
 },50);
 
-setInterval(function() {
+setInterval(function updateAch() {
     if (fp === "true") {
         firpic.style.display = "none";
         firpicu.style.display = "block";
@@ -232,10 +232,6 @@ setInterval(function() {
 },50);
 
 var addit = document.getElementById("addit");
+var ach = document.getElementById("achievements");
 
-addit.addEventListener("click", function(){
-    if ((fp === "true") && (ffp === "true")) {
-            localStorage.setItem('ffirstpint', false);
-            alert("Unlocked FIRST PINT achievement");
-        }
-});
+ach.addEventListener("click", updateAch());
