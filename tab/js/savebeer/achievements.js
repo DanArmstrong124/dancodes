@@ -142,3 +142,36 @@ setInterval(function() {
         tabtextu.style.display = "block";
     }
 },100);
+
+setInterval(function() {
+    if (storageTotalPints >= 1){
+        localStorage.setItem('firstpint', true);
+    }
+    if (storageTotalPints >= 2){
+        localStorage.setItem('doubleparked', true);
+    }
+    if (storageTotalPints >= 10){
+        localStorage.setItem('outout', true);
+    }
+    if (storageTotalPints >= 50){
+        localStorage.setItem('weekender', true);
+    }
+    if (storageTotalPints >= 150){
+        localStorage.setItem('bigspender', true);
+    }
+    if (storageTotalPints >= 400){
+        localStorage.setItem('ironliver', true);
+    }
+    if (storageTotalPints >= 1000){
+        localStorage.setItem('timeatthebar', true);
+    }
+    if (pubssaved >= 1){
+        localStorage.setItem('thelocal', true);
+    }
+    if (pubssaved >= 3){
+        localStorage.setItem('patriot', true);
+    }
+    if (pubssaved >= 5){
+        localStorage.setItem('hero', true);
+    }
+},50);
