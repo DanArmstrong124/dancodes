@@ -1,9 +1,9 @@
-var logincredsinput = document.getElementById("testerpass").value();
+var logincredsinput = document.getElementById("testerpass").value;
 var loginbtn = document.getElementById("loginbtn");
 var logincreds = "false";
 
 setInterval(function(){
-    logincredsinput = document.getElementById("testerpass").value()
+    logincredsinput = document.getElementById("testerpass").value;
 }, 50)
 
 loginbtn.addEventListener("click", function(){
