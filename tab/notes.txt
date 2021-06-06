@@ -1,4 +1,3 @@
-achievements graphics
-achievements modals / custom alert messages (Also for you've saved a pub message)
+OTHER GLASSES?
 
-Other glasses all linked in
+Set up a "firsttimevisit" and then if it is true on open load up modals with instructions as to what each button does and the goal
