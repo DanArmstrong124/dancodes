@@ -1,6 +1,40 @@
 var totpinmod = document.getElementById("totpinmod");
 var totpubmod = document.getElementById("totpubmod");
 
+var firpic = document.getElementById("firpic");
+var firpicu = document.getElementById("firpicu");
+
+var dobpic = document.getElementById("dobpic");
+var dobpicu = document.getElementById("dobpicu");
+
+var outpic = document.getElementById("outpic");
+var outpicu = document.getElementById("outpicu");
+
+var wekpic = document.getElementById("wekpic");
+var wekpicu = document.getElementById("wekpicu");
+
+var locpic = document.getElementById("locpic");
+var locpicu = document.getElementById("locpicu");
+
+var bigpic = document.getElementById("bigpic");
+var bigpicu = document.getElementById("bigpicu");
+
+var patpic = document.getElementById("patpic");
+var patpicu = document.getElementById("patpicu");
+
+var ironpic = document.getElementById("ironpic");
+var ironpicu = document.getElementById("ironpicu");
+
+var heropic = document.getElementById("heropic");
+var heropicu = document.getElementById("heropicu");
+var herotext = document.getElementById("hero-text");
+var herotextu = document.getElementById("hero-textu");
+
+var tabpic = document.getElementById("tabpic");
+var tabpicu = document.getElementById("tabpicu");
+var tabtext = document.getElementById("tab-text");
+var tabtextu = document.getElementById("tab-textu");
+
 var fp = localStorage.getItem('firstpint');
 var dp = localStorage.getItem('doubleparked');
 var oo = localStorage.getItem('outout');
@@ -61,3 +95,50 @@ setInterval(function() {
     totpinmod.innerHTML = storageTotalPints;
     totpubmod.innerHTML = pubssaved;
 },50);
+
+setInterval(function() {
+    if (fp === "true") {
+        firpic.style.display = "none";
+        firpicu.style.display = "block";
+    }
+    if (dp === "true") {
+        dobpic.style.display = "none";
+        dobpicu.style.display = "block";
+    }
+    if (oo === "true") {
+        outpic.style.display = "none";
+        outpicu.style.display = "block";
+    }
+    if (wk === "true") {
+        wekpic.style.display = "none";
+        wekpicu.style.display = "block";
+    }
+    if (tl === "true") {
+        locpic.style.display = "none";
+        locpicu.style.display = "block";
+    }
+    if (bs === "true") {
+        bigpic.style.display = "none";
+        bigpicu.style.display = "block";
+    }
+    if (pa === "true") {
+        patpic.style.display = "none";
+        patpicu.style.display = "block";
+    }
+    if (il === "true") {
+        ironpic.style.display = "none";
+        ironpicu.style.display = "block";
+    }
+    if (hr === "true") {
+        heropic.style.display = "none";
+        heropicu.style.display = "block";
+        herotext.style.display = "none";
+        herotextu.style.display = "block";
+    }
+    if (ta === "true") {
+        tabpic.style.display = "none";
+        tabpicu.style.display = "block";
+        tabtext.style.display = "none";
+        tabtextu.style.display = "block";
+    }
+},100);
