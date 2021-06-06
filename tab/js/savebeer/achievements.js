@@ -151,7 +151,7 @@ setInterval(function() {
     totpubmod.innerHTML = pubssaved;
 },50);
 
-setInterval(function updateAch() {
+setInterval(function() {
     if (fp === "true") {
         firpic.style.display = "none";
         firpicu.style.display = "block";
@@ -307,5 +307,96 @@ setInterval(function() {
 
 var addit = document.getElementById("addit");
 var ach = document.getElementById("achievements");
+
+function updateAch() {
+    if (fp === "true") {
+        firpic.style.display = "none";
+        firpicu.style.display = "block";
+    }
+    if (dp === "true") {
+        dobpic.style.display = "none";
+        dobpicu.style.display = "block";
+    }
+    if (oo === "true") {
+        outpic.style.display = "none";
+        outpicu.style.display = "block";
+    }
+    if (wk === "true") {
+        wekpic.style.display = "none";
+        wekpicu.style.display = "block";
+    }
+    if (tl === "true") {
+        locpic.style.display = "none";
+        locpicu.style.display = "block";
+    }
+    if (bs === "true") {
+        bigpic.style.display = "none";
+        bigpicu.style.display = "block";
+    }
+    if (pa === "true") {
+        patpic.style.display = "none";
+        patpicu.style.display = "block";
+    }
+    if (il === "true") {
+        ironpic.style.display = "none";
+        ironpicu.style.display = "block";
+    }
+    if (hr === "true") {
+        heropic.style.display = "none";
+        heropicu.style.display = "block";
+        herotext.style.display = "none";
+        herotextu.style.display = "block";
+    }
+    if (ta === "true") {
+        tabpic.style.display = "none";
+        tabpicu.style.display = "block";
+        tabtext.style.display = "none";
+        tabtextu.style.display = "block";
+    }
+    if (fp === "false") {
+        firpic.style.display = "block";
+        firpicu.style.display = "none";
+    }
+    if (dp === "false") {
+        dobpic.style.display = "block";
+        dobpicu.style.display = "none";
+    }
+    if (oo === "false") {
+        outpic.style.display = "block";
+        outpicu.style.display = "none";
+    }
+    if (wk === "false") {
+        wekpic.style.display = "block";
+        wekpicu.style.display = "none";
+    }
+    if (tl === "false") {
+        locpic.style.display = "block";
+        locpicu.style.display = "none";
+    }
+    if (bs === "false") {
+        bigpic.style.display = "block";
+        bigpicu.style.display = "none";
+    }
+    if (pa === "false") {
+        patpic.style.display = "block";
+        patpicu.style.display = "none";
+    }
+    if (il === "false") {
+        ironpic.style.display = "block";
+        ironpicu.style.display = "none";
+    }
+    if (hr === "false") {
+        heropic.style.display = "block";
+        heropicu.style.display = "none";
+        herotext.style.display = "block";
+        herotextu.style.display = "none";
+    }
+    if (ta === "false") {
+        tabpic.style.display = "block";
+        tabpicu.style.display = "none";
+        tabtext.style.display = "block";
+        tabtextu.style.display = "none";
+    }
+}
 
 ach.addEventListener("click", updateAch());
