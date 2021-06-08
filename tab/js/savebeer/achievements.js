@@ -156,7 +156,7 @@ setInterval(function() {
     if (fp === "true") {
         //firpic.style.display = "none";
         //firpicu.style.display = "block";
-        firstpintpic.style.backgroundImage = "url('../../firstpintunlocked.png')"
+        firstpintpic.style.backgroundImage = "url('firstpintunlocked.png')"
     }
     if (dp === "true") {
         dobpic.style.display = "none";
@@ -201,7 +201,7 @@ setInterval(function() {
     if (fp === "false") {
         //firpic.style.display = "block";
         //firpicu.style.display = "none";
-        firstpintpic.style.backgroundImage = "url('../../firstpint.png')"
+        firstpintpic.style.backgroundImage = "url('firstpint.png')"
     }
     if (dp === "false") {
         dobpic.style.display = "block";
