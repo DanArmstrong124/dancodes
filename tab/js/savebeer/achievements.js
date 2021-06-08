@@ -61,8 +61,8 @@ var fta = localStorage.getItem('ftimeatthebar');
 
 
 setInterval(function(){
-    if ((fp !== "true") && (fp !== "false")){
-        localStorage.setItem('firstpint', false);
+    if ((fp !== "yes") && (fp !== "no")){
+        localStorage.setItem('firstpint', "no");
         location.reload();
     }
     if ((dp !== "true") && (dp !== "false")){
