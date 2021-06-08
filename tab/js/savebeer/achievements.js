@@ -434,6 +434,6 @@ awareclickbtn.addEventListener("click", function(){
     }
 });
 
-window.onload(function(){
+window.onload = function(){
     alert("hi;");
-});
+};
