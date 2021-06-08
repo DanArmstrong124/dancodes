@@ -13,6 +13,7 @@ var removeit = document.getElementById("removeit");
 var removeitconfirm = document.getElementById("removeitconfirm");
 var instructions = new bootstrap.Modal(document.getElementById('instruct'), {});
 var instructionsclose = document.getElementById("closeinstruct");
+var helpbutton = document.getElementById("helpbutton");
 
 setTimeout(function() {
     foam1.style.opacity = "0";
@@ -133,4 +134,8 @@ setInterval(function() {
 
 instructionsclose.addEventListener("click", function(){
     location.reload();
+});
+
+helpbutton.addEventListener("click", function(){
+    instructions.show();
 });
