@@ -3,6 +3,7 @@ var totpubmod = document.getElementById("totpubmod");
 
 var firpic = document.getElementById("firpic");
 var firpicu = document.getElementById("firpicu");
+var firstpintpic = document.getElementById("firstpintpic");
 
 var dobpic = document.getElementById("dobpic");
 var dobpicu = document.getElementById("dobpicu");
@@ -153,8 +154,9 @@ setInterval(function() {
 
 setInterval(function() {
     if (fp === "true") {
-        firpic.style.display = "none";
-        firpicu.style.display = "block";
+        //firpic.style.display = "none";
+        //firpicu.style.display = "block";
+        firstpintpic.style.backgroundImage = "url('../../firstpintunlocked.png')"
     }
     if (dp === "true") {
         dobpic.style.display = "none";
@@ -197,8 +199,9 @@ setInterval(function() {
         tabtextu.style.display = "block";
     }
     if (fp === "false") {
-        firpic.style.display = "block";
-        firpicu.style.display = "none";
+        //firpic.style.display = "block";
+        //firpicu.style.display = "none";
+        firstpintpic.style.backgroundImage = "url('../../firstpint.png')"
     }
     if (dp === "false") {
         dobpic.style.display = "block";
