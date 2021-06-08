@@ -7,34 +7,43 @@ var firstpintpic = document.getElementById("firstpintpic");
 
 var dobpic = document.getElementById("dobpic");
 var dobpicu = document.getElementById("dobpicu");
+var doubleparkedpic = document.getElementById("doubleparkedpic");
 
 var outpic = document.getElementById("outpic");
 var outpicu = document.getElementById("outpicu");
+var outoutpic = document.getElementById("outoutpic");
 
 var wekpic = document.getElementById("wekpic");
 var wekpicu = document.getElementById("wekpicu");
+var weekenderpic = document.getElementById("weekenderpic");
 
 var locpic = document.getElementById("locpic");
 var locpicu = document.getElementById("locpicu");
+var thelocalpic = document.getElementById("thelocalpic");
 
 var bigpic = document.getElementById("bigpic");
 var bigpicu = document.getElementById("bigpicu");
+var bigspenderpic = document.getElementById("bigspenderpic");
 
 var patpic = document.getElementById("patpic");
 var patpicu = document.getElementById("patpicu");
+var patriotpic = document.getElementById("patriotpic");
 
 var ironpic = document.getElementById("ironpic");
 var ironpicu = document.getElementById("ironpicu");
+var ironliverpic = document.getElementById("ironliverpic");
 
 var heropic = document.getElementById("heropic");
 var heropicu = document.getElementById("heropicu");
 var herotext = document.getElementById("hero-text");
 var herotextu = document.getElementById("hero-textu");
+var heropicture = document.getElementById("heropicture");
 
 var tabpic = document.getElementById("tabpic");
 var tabpicu = document.getElementById("tabpicu");
 var tabtext = document.getElementById("tab-text");
 var tabtextu = document.getElementById("tab-textu");
+var timeatthebarpic = document.getElementById("timeatthebarpic");
 
 var fp = localStorage.getItem('firstpint');
 var dp = localStorage.getItem('doubleparked');
@@ -61,8 +70,8 @@ var fta = localStorage.getItem('ftimeatthebar');
 
 
 setInterval(function(){
-    if ((fp !== "yes") && (fp !== "no")){
-        localStorage.setItem('firstpint', "no");
+    if ((fp !== "true") && (fp !== "false")){
+        localStorage.setItem('firstpint', false);
         location.reload();
     }
     if ((dp !== "true") && (dp !== "false")){
@@ -153,110 +162,128 @@ setInterval(function() {
 },50);
 
 setInterval(function() {
-    if (fp === "yes") {
+    if (fp === "true") {
         //firpic.style.display = "none";
         //firpicu.style.display = "block";
         firstpintpic.style.backgroundImage = "url('firstpintunlocked.png')"
     }
     if (dp === "true") {
-        dobpic.style.display = "none";
-        dobpicu.style.display = "block";
+       //dobpic.style.display = "none";
+        //dobpicu.style.display = "block";
+        doubleparkedpic.style.backgroundImage = "url('doubleparkedunlocked.png')"
     }
     if (oo === "true") {
-        outpic.style.display = "none";
-        outpicu.style.display = "block";
+        //outpic.style.display = "none";
+        //outpicu.style.display = "block";
+        outoutpic.style.backgroundImage = "url('outoutunlocked.png')"
     }
     if (wk === "true") {
-        wekpic.style.display = "none";
-        wekpicu.style.display = "block";
+        //wekpic.style.display = "none";
+        //wekpicu.style.display = "block";
+        weekenderpic.style.backgroundImage = "url('weekenderunlocked.png')"
     }
     if (tl === "true") {
-        locpic.style.display = "none";
-        locpicu.style.display = "block";
+        //locpic.style.display = "none";
+        //locpicu.style.display = "block";
+        thelocalpic.style.backgroundImage = "url('thelocalunlocked.png')"
     }
     if (bs === "true") {
-        bigpic.style.display = "none";
-        bigpicu.style.display = "block";
+        //bigpic.style.display = "none";
+        //bigpicu.style.display = "block";
+        bigspenderpic.style.backgroundImage = "url('bigspenderunlocked.png')"
     }
     if (pa === "true") {
-        patpic.style.display = "none";
-        patpicu.style.display = "block";
+        //patpic.style.display = "none";
+        //patpicu.style.display = "block";
+        patriotpic.style.backgroundImage = "url('patriotunlocked.png')"
     }
     if (il === "true") {
-        ironpic.style.display = "none";
-        ironpicu.style.display = "block";
+        //ironpic.style.display = "none";
+        //ironpicu.style.display = "block";
+        ironliverpic.style.backgroundImage = "url('ironliverunlocked.png')"
     }
     if (hr === "true") {
-        heropic.style.display = "none";
-        heropicu.style.display = "block";
+        //heropic.style.display = "none";
+        //heropicu.style.display = "block";
         herotext.style.display = "none";
         herotextu.style.display = "block";
+        heropicture.style.backgroundImage = "url('herounlocked.png')"
     }
     if (ta === "true") {
-        tabpic.style.display = "none";
-        tabpicu.style.display = "block";
+        //tabpic.style.display = "none";
+        //tabpicu.style.display = "block";
         tabtext.style.display = "none";
         tabtextu.style.display = "block";
+        timeatthebarpic.style.backgroundImage = "url('timeatthebarunlocked.png')"
     }
-    if (fp === "no") {
+    if (fp === "false") {
         //firpic.style.display = "block";
         //firpicu.style.display = "none";
         firstpintpic.style.backgroundImage = "url('firstpint.png')"
     }
     if (dp === "false") {
-        dobpic.style.display = "block";
-        dobpicu.style.display = "none";
+        //dobpic.style.display = "block";
+        //dobpicu.style.display = "none";
+        doubleparkedpic.style.backgroundImage = "url('doubleparked.png')"
     }
     if (oo === "false") {
-        outpic.style.display = "block";
-        outpicu.style.display = "none";
+        //outpic.style.display = "block";
+        //outpicu.style.display = "none";
+        outoutpic.style.backgroundImage = "url('outout.png')"
     }
     if (wk === "false") {
-        wekpic.style.display = "block";
-        wekpicu.style.display = "none";
+        //wekpic.style.display = "block";
+        //wekpicu.style.display = "none";
+        weekenderpic.style.backgroundImage = "url('weekender.png')"
     }
     if (tl === "false") {
-        locpic.style.display = "block";
-        locpicu.style.display = "none";
+        //locpic.style.display = "block";
+        //locpicu.style.display = "none";
+        thelocalpic.style.backgroundImage = "url('thelocal.png')"
     }
     if (bs === "false") {
-        bigpic.style.display = "block";
-        bigpicu.style.display = "none";
+        //bigpic.style.display = "block";
+        //bigpicu.style.display = "none";
+        bigspenderpic.style.backgroundImage = "url('bigspender.png')"
     }
     if (pa === "false") {
-        patpic.style.display = "block";
-        patpicu.style.display = "none";
+        //patpic.style.display = "block";
+        //patpicu.style.display = "none";
+        patriotpic.style.backgroundImage = "url('patriot.png')"
     }
     if (il === "false") {
-        ironpic.style.display = "block";
-        ironpicu.style.display = "none";
+        //ironpic.style.display = "block";
+        //ironpicu.style.display = "none";
+        ironliverpic.style.backgroundImage = "url('ironliver.png')"
     }
     if (hr === "false") {
-        heropic.style.display = "block";
-        heropicu.style.display = "none";
+        //heropic.style.display = "block";
+        //heropicu.style.display = "none";
         herotext.style.display = "block";
         herotextu.style.display = "none";
+        heropicture.style.backgroundImage = "url('hidden.png')"
     }
     if (ta === "false") {
-        tabpic.style.display = "block";
-        tabpicu.style.display = "none";
+        //tabpic.style.display = "block";
+        //tabpicu.style.display = "none";
         tabtext.style.display = "block";
         tabtextu.style.display = "none";
+        timeatthebarpic.style.backgroundImage = "url('hidden.png')"
     }
 },100);
 
 setInterval(function() {
     if (storageTotalPints >= 1){
-        localStorage.setItem('firstpint', "yes");
+        localStorage.setItem('firstpint', true);
     }
     if (storageTotalPints <= 0){
-        localStorage.setItem('firstpint', "no");
+        localStorage.setItem('firstpint', false);
     }
     if (storageTotalPints >= 2){
-        localStorage.setItem('doubleparked', "true");
+        localStorage.setItem('doubleparked', true);
     }
     if (storageTotalPints <= 1){
-        localStorage.setItem('doubleparked', "false");
+        localStorage.setItem('doubleparked', false);
     }
     if (storageTotalPints >= 10){
         localStorage.setItem('outout', true);

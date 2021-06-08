@@ -3,6 +3,14 @@
     border-radius: 50%;
 }
 
+.picture-area {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    border-radius: 50%;
+    left: 25px;
+}
+
 .name-area {
     font-weight: bold;
     margin-top: 8%;
