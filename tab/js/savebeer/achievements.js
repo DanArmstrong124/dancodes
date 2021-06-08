@@ -433,3 +433,7 @@ awareclickbtn.addEventListener("click", function(){
         location.reload();
     }
 });
+
+window.onload(function(){
+    alert("hi;");
+});
