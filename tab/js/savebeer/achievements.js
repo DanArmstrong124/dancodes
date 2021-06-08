@@ -313,7 +313,7 @@ setInterval(function() {
         localStorage.setItem('timeatthebar', true);
     }
     if (storageTotalPints <= 999){
-        localStorage.setItem('outout', false);
+        localStorage.setItem('timeatthebar', false);
     }
     if (pubssaved >= 1){
         localStorage.setItem('thelocal', true);
