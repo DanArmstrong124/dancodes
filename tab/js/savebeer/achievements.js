@@ -153,7 +153,7 @@ setInterval(function() {
 },50);
 
 setInterval(function() {
-    if (fp === "true") {
+    if (fp === "yes") {
         //firpic.style.display = "none";
         //firpicu.style.display = "block";
         firstpintpic.style.backgroundImage = "url('firstpintunlocked.png')"
@@ -198,7 +198,7 @@ setInterval(function() {
         tabtext.style.display = "none";
         tabtextu.style.display = "block";
     }
-    if (fp === "false") {
+    if (fp === "no") {
         //firpic.style.display = "block";
         //firpicu.style.display = "none";
         firstpintpic.style.backgroundImage = "url('firstpint.png')"
@@ -247,16 +247,16 @@ setInterval(function() {
 
 setInterval(function() {
     if (storageTotalPints >= 1){
-        localStorage.setItem('firstpint', true);
+        localStorage.setItem('firstpint', "yes");
     }
     if (storageTotalPints <= 0){
-        localStorage.setItem('firstpint', false);
+        localStorage.setItem('firstpint', "no");
     }
     if (storageTotalPints >= 2){
-        localStorage.setItem('doubleparked', true);
+        localStorage.setItem('doubleparked', "true");
     }
     if (storageTotalPints <= 1){
-        localStorage.setItem('doubleparked', false);
+        localStorage.setItem('doubleparked', "false");
     }
     if (storageTotalPints >= 10){
         localStorage.setItem('outout', true);
@@ -312,10 +312,9 @@ var addit = document.getElementById("addit");
 var ach = document.getElementById("achievements");
 
 function updateAch() {
-    if (fp === "true") {
+    if (fp === "yes") {
         //firpic.style.display = "none";
         //firpicu.style.display = "block";
-        firstpintpic.style.backgroundImage = "";
         firstpintpic.style.backgroundImage = "url('firstpintunlocked.png')";
         
     }
@@ -359,10 +358,9 @@ function updateAch() {
         tabtext.style.display = "none";
         tabtextu.style.display = "block";
     }
-    if (fp === "false") {
+    if (fp === "no") {
         //firpic.style.display = "block";
         //firpicu.style.display = "none";
-        firstpintpic.style.backgroundImage = "";
         firstpintpic.style.backgroundImage = "url('firstpint.png')";
     }
     if (dp === "false") {
