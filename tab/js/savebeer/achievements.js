@@ -435,5 +435,40 @@ awareclickbtn.addEventListener("click", function(){
 });
 
 window.onload = function(){
-    alert("hi;");
+    if ((ffp !== "true") && (fp !== "true")){
+        localStorage.setItem('ffirstpint', false);
+    }
+    if ((fdp !== "true") && (dp !== "true")){
+        localStorage.setItem('fdoubleparked', false);
+    }
+    if ((foo !== "true") && (oo !== "true")){
+        localStorage.setItem('foutout', false);
+    }
+    if ((fwk !== "true") && (wk !== "true")){
+        localStorage.setItem('fweekender', false);
+    }
+    if ((ftl !== "true") && (tl !== "true")){
+        localStorage.setItem('fthelocal', false);
+    }
+    if ((fbs !== "true") && (bs !== "true")){
+        localStorage.setItem('fbigspender', false);
+    }
+    if ((fpa !== "true") && (pa !== "true")){
+        localStorage.setItem('fpatriot', false);
+    }
+    if ((fil !== "true") && (il !== "true")){
+        localStorage.setItem('fironliver', false);
+    }
+    if ((fop !== "true") && (op !== "true")){
+        localStorage.setItem('foops', false);
+    }
+    if ((faw !== "true") && (aw !== "true")){
+        localStorage.setItem('faware', false);
+    }
+    if ((fhr !== "true") && (hr !== "true")){
+        localStorage.setItem('fhero', false);
+    }
+    if ((fta !== "true") && (ta !== "true")){
+        localStorage.setItem('ftimeatthebar', false);
+    }
 };
