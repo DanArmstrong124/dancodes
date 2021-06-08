@@ -284,6 +284,11 @@ setInterval(function() {
         //ironpicu.style.display = "none";
         ironliverpic.style.backgroundImage = "url('ironliver.png')"
     }
+    if (aw === "false") {
+        awaretext.style.display = "block";
+        awaretextu.style.display = "none";
+        awarepic.style.backgroundImage = "url('hidden.png')"
+    }
     if (hr === "false") {
         //heropic.style.display = "block";
         //heropicu.style.display = "none";
