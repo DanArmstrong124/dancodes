@@ -11,7 +11,7 @@ var foam2 = document.getElementById("foam2");
 var addit = document.getElementById("addit");
 var removeit = document.getElementById("removeit");
 var removeitconfirm = document.getElementById("removeitconfirm");
-var instructions = new bootstrap.Modal(document.getElementById('instruct'), {}});
+var instructions = new bootstrap.Modal(document.getElementById('instruct'), {});
 
 setTimeout(function() {
     foam1.style.opacity = "0";
