@@ -313,8 +313,10 @@ var ach = document.getElementById("achievements");
 
 function updateAch() {
     if (fp === "true") {
-        firpic.style.display = "none";
-        firpicu.style.display = "block";
+        //firpic.style.display = "none";
+        //firpicu.style.display = "block";
+        firstpintpic.style.backgroundImage = "url('firstpintunlocked.png')"
+        
     }
     if (dp === "true") {
         dobpic.style.display = "none";
@@ -357,8 +359,9 @@ function updateAch() {
         tabtextu.style.display = "block";
     }
     if (fp === "false") {
-        firpic.style.display = "block";
-        firpicu.style.display = "none";
+        //firpic.style.display = "block";
+        //firpicu.style.display = "none";
+        firstpintpic.style.backgroundImage = "url('firstpint.png')"
     }
     if (dp === "false") {
         dobpic.style.display = "block";
