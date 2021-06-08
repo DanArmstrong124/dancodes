@@ -11,7 +11,7 @@ var foam2 = document.getElementById("foam2");
 var addit = document.getElementById("addit");
 var removeit = document.getElementById("removeit");
 var removeitconfirm = document.getElementById("removeitconfirm");
-//var instructions = new bootstrap.Modal(document.getElementById('instruct'), options);
+var instructions = new bootstrap.Modal(document.getElementById('instruct'), {}});
 
 setTimeout(function() {
     foam1.style.opacity = "0";
@@ -23,10 +23,10 @@ setInterval(function() {
         currentpints = 0;
         location.reload();
     }
-    //if ((instructions != "true") && (instructions != "false")){
-      //  localStorage.setItem('firsttime', true)
-        //location.reload();
-   // }
+    if ((firsttime != "true") && (firsttime != "false")){
+        localStorage.setItem('firsttime', true)
+        location.reload();
+    }
     if (isNaN(storageCurrentPints)){
         parseInt(localStorage.setItem('currentpints', 0));
         location.reload();
@@ -123,9 +123,9 @@ setInterval(function(){
 
 //Every 0.1s the pint will refresh to keep filling every persons clicks
 
-//setInterval(function() {
-    //if (instructions === "true"){
-       // localStorage.setItem('firsttime', false);
-       // instructions.show();
-  //  }
-//},1000);
+setInterval(function() {
+    if (firsttime === "true"){
+        localStorage.setItem('firsttime', false);
+        instructions.show();
+    }
+},1000);
