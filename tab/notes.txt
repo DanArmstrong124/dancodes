@@ -1,3 +1,7 @@
 OTHER GLASSES?
 
-Set up a "firsttimevisit" and then if it is true on open load up modals with instructions as to what each button does and the goal
+on window load:
+
+    if achievement and fachievement === true:
+
+        achievement modal.show()

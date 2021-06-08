@@ -3,6 +3,7 @@ var btn = document.getElementById("btnpress");
 var pintsleft = document.getElementById("pintsleft");
 var storageCurrentPints = parseInt(localStorage.getItem('currentpints'));
 var storageTotalPints = parseInt(localStorage.getItem('totalpintsnum'));
+var removeclick = localStorage.getItem('removeclick');
 var storageFirstVisit = localStorage.getItem('first');
 var firstvisit = true;
 var firsttime = localStorage.getItem('firsttime');
@@ -25,7 +26,11 @@ setInterval(function() {
         currentpints = 0;
         location.reload();
     }
-    if ((firsttime != "true") && (firsttime != "false")){
+    if ((removeclick !== "true") && (removeclick !== "false")){
+        localStorage.setItem('removeclick', false);
+        location.reload();
+    }
+    if ((firsttime !== "true") && (firsttime !== "false")){
         localStorage.setItem('firsttime', true)
         location.reload();
     }
@@ -103,6 +108,9 @@ removeitconfirm.addEventListener("click", function() {
         fillsofar = parseInt(localStorage.getItem('currentpints')) /  totalpints * 100;
         fill.style.height = fillsofar + "%";
         pintsleft.innerHTML = parseInt(localStorage.getItem('currentpints'));
+        if (removeclick === "false"){
+            localStorage.setItem('removeclick', true);
+        }
 });
 
 setInterval(function(){

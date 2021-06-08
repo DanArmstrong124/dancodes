@@ -33,6 +33,10 @@ var ironpic = document.getElementById("ironpic");
 var ironpicu = document.getElementById("ironpicu");
 var ironliverpic = document.getElementById("ironliverpic");
 
+var oopspic = document.getElementById("oopspic");
+var oopstext = document.getElementById("oops-text");
+var oopstextu = document.getElementById("oops-textu");
+
 var awarepic = document.getElementById("awarepic");
 var awaretext = document.getElementById("aware-text");
 var awaretextu = document.getElementById("aware-textu");
@@ -57,6 +61,7 @@ var tl = localStorage.getItem('thelocal');
 var bs = localStorage.getItem('bigspender');
 var pa = localStorage.getItem('patriot');
 var il = localStorage.getItem('ironliver');
+var op = localStorage.getItem('oops');
 var aw = localStorage.getItem('aware');
 var hr = localStorage.getItem('hero');
 var ta = localStorage.getItem('timeatthebar');
@@ -69,6 +74,7 @@ var ftl = localStorage.getItem('fthelocal');
 var fbs = localStorage.getItem('fbigspender');
 var fpa = localStorage.getItem('fpatriot');
 var fil = localStorage.getItem('fironliver');
+var fop = localStorage.getItem("foops");
 var faw = localStorage.getItem('faware');
 var fhr = localStorage.getItem('fhero');
 var fta = localStorage.getItem('ftimeatthebar');
@@ -106,6 +112,10 @@ setInterval(function(){
     }
     if ((il !== "true") && (il !== "false")){
         localStorage.setItem('ironliver', false);
+        location.reload();
+    }
+    if ((op !== "true") && (op !== "false")){
+        localStorage.setItem('oops', false);
         location.reload();
     }
     if ((aw !== "true") && (aw !== "false")){
@@ -153,6 +163,10 @@ setInterval(function(){
     }
     if ((fil !== "true") && (fil !== "false")){
         localStorage.setItem('fironliver', true);
+        location.reload();
+    }
+    if ((fop !== "true") && (fop !== "false")){
+        localStorage.setItem('foops', true);
         location.reload();
     }
     if ((faw !== "true") && (faw !== "false")){
@@ -225,6 +239,11 @@ setInterval(function() {
         //ironpicu.style.display = "block";
         ironliverpic.style.backgroundImage = "url('ironliverunlocked.png')"
     }
+    if (op === "true"){
+        oopstext.style.display = "none";
+        oopstextu.style.display = "block";
+        oopspic.style.backgroundImage = "url('oopsunlocked.png')"
+    }
     if (aw === "true"){
         awaretext.style.display = "none";
         awaretextu.style.display = "block";
@@ -283,6 +302,11 @@ setInterval(function() {
         //ironpic.style.display = "block";
         //ironpicu.style.display = "none";
         ironliverpic.style.backgroundImage = "url('ironliver.png')"
+    }
+    if (op === "false") {
+        oopstext.style.display = "block";
+        oopstextu.style.display = "none";
+        oopspic.style.backgroundImage = "url('hidden.png')"
     }
     if (aw === "false") {
         awaretext.style.display = "block";
@@ -365,6 +389,12 @@ setInterval(function() {
     }
     if (pubssaved <= 4){
         localStorage.setItem('hero', false);
+    }
+    if (removeclick === "true"){
+        localStorage.setItem('oops', true);
+    }
+    if (removeclick === "false"){
+        localStorage.setItem('oops', false);
     }
     if (awareclick === "true"){
         localStorage.setItem('aware', true);
