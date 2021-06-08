@@ -399,6 +399,7 @@ setInterval(function() {
 awareclickbtn.addEventListener("click", function(){
     if (awareclick === "false"){
         localStorage.setItem("awareclick", true);
+        window.open('https://www.drinkaware.co.uk/', '_blank');
         location.reload();
     }
 });
