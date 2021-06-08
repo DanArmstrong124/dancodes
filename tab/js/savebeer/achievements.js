@@ -33,6 +33,10 @@ var ironpic = document.getElementById("ironpic");
 var ironpicu = document.getElementById("ironpicu");
 var ironliverpic = document.getElementById("ironliverpic");
 
+var awarepic = document.getElementById("awarepic");
+var awaretext = document.getElementById("aware-text");
+var awaretextu = document.getElementById("aware-textu");
+
 var heropic = document.getElementById("heropic");
 var heropicu = document.getElementById("heropicu");
 var herotext = document.getElementById("hero-text");
@@ -53,6 +57,7 @@ var tl = localStorage.getItem('thelocal');
 var bs = localStorage.getItem('bigspender');
 var pa = localStorage.getItem('patriot');
 var il = localStorage.getItem('ironliver');
+var aw = localStorage.getItem('aware');
 var hr = localStorage.getItem('hero');
 var ta = localStorage.getItem('timeatthebar');
 
@@ -64,6 +69,7 @@ var ftl = localStorage.getItem('fthelocal');
 var fbs = localStorage.getItem('fbigspender');
 var fpa = localStorage.getItem('fpatriot');
 var fil = localStorage.getItem('fironliver');
+var faw = localStorage.getItem('faware');
 var fhr = localStorage.getItem('fhero');
 var fta = localStorage.getItem('ftimeatthebar');
 
@@ -100,6 +106,10 @@ setInterval(function(){
     }
     if ((il !== "true") && (il !== "false")){
         localStorage.setItem('ironliver', false);
+        location.reload();
+    }
+    if ((aw !== "true") && (aw !== "false")){
+        localStorage.setItem('aware', false);
         location.reload();
     }
     if ((hr !== "true") && (hr !== "false")){
@@ -145,6 +155,10 @@ setInterval(function(){
         localStorage.setItem('fironliver', true);
         location.reload();
     }
+    if ((faw !== "true") && (faw !== "false")){
+        localStorage.setItem('faware', true);
+        location.reload();
+    }
     if ((fhr !== "true") && (fhr !== "false")){
         localStorage.setItem('fhero', true);
         location.reload();
@@ -154,6 +168,15 @@ setInterval(function(){
         location.reload();
     }
 },50);
+
+var awareclick = localStorage.getItem('awareclick');
+
+setTimeout(function(){
+    if ((awareclick !== "true") && (awareclick !== "false")){
+        localStorage.setItem("awareclick", false);
+        location.reload();
+    }
+}, 50);
 
 
 setInterval(function() {
@@ -201,6 +224,11 @@ setInterval(function() {
         //ironpic.style.display = "none";
         //ironpicu.style.display = "block";
         ironliverpic.style.backgroundImage = "url('ironliverunlocked.png')"
+    }
+    if (aw === "true"){
+        awaretext.style.display = "none";
+        awaretextu.style.display = "block";
+        awarepic.style.backgroundImage = "url('awareunlocked.png')"
     }
     if (hr === "true") {
         //heropic.style.display = "none";
@@ -333,12 +361,19 @@ setInterval(function() {
     if (pubssaved <= 4){
         localStorage.setItem('hero', false);
     }
+    if (awareclick === "true"){
+        localStorage.setItem('aware', true);
+    }
+    if (awareclick === "false"){
+        localStorage.setItem('aware', false);
+    }
 },50);
 
 var addit = document.getElementById("addit");
 var ach = document.getElementById("achievements");
 var achmodal = new bootstrap.Modal(document.getElementById('achievementsmodal'), {});
 var achmodalclose = document.getElementById("achmodalclose");
+var awareclickbtn = document.getElementById("awareclick");
 
 ach.addEventListener("click", function(){
     localStorage.setItem("achopener", "true");
@@ -355,3 +390,10 @@ setInterval(function() {
         achmodal.show();
     }
 }, 50);
+
+awareclickbtn.addEventListener("click", function(){
+    if (awareclick === "false"){
+        localStorage.setItem("awareclick", true);
+        location.reload();
+    }
+});
