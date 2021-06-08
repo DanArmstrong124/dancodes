@@ -1,11 +1,11 @@
 addtimer = document.getElementById("addtimer");
 removetimer = document.getElementById("removetimer");
 
-var rtimecount = 30;
-var atimecount = 30;
+var rtimecount = 5;
+var atimecount = 5;
 
 removeitconfirm.addEventListener("click", function(){
-    rtimecount = 30;
+    rtimecount = 5;
     removeit.style.display = "none";
     removetimer.style.display = "block";
 
@@ -21,7 +21,7 @@ removeitconfirm.addEventListener("click", function(){
 });
 
 addit.addEventListener("click", function(){
-    atimecount = 30;
+    atimecount = 5;
     addit.style.display = "none";
     addtimer.style.display = "block";
 
