@@ -12,6 +12,7 @@ var addit = document.getElementById("addit");
 var removeit = document.getElementById("removeit");
 var removeitconfirm = document.getElementById("removeitconfirm");
 var instructions = new bootstrap.Modal(document.getElementById('instruct'), {});
+var instructionsclose = document.getElementById("closeinstruct");
 
 setTimeout(function() {
     foam1.style.opacity = "0";
@@ -129,3 +130,7 @@ setInterval(function() {
         instructions.show();
     }
 },1000);
+
+instructionsclose.addEventListener("click", function(){
+    location.reload();
+});
