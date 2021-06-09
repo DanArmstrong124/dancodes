@@ -26,6 +26,6 @@
 }
 
 .spinning:hover {
-    transform:rotate(45deg);
-    transition-duration:1s;
+    transform:rotate(7200deg);
+    transition-duration:10s;
 }
