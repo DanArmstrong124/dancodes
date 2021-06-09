@@ -1,7 +1,5 @@
 OTHER GLASSES?
 
-on window load:
+Achivement modals, finish setup
 
-    if achievement and fachievement === true:
-
-        achievement modal.show()
+remove ach refresh on click

@@ -435,17 +435,17 @@ awareclickbtn.addEventListener("click", function(){
 });
 
 var ach1modal = new bootstrap.Modal(document.getElementById('ach1modal'), {});
-var ach2modal = new bootstrap.Modal(document.getElementById('ach1modal'), {});
-var ach3modal = new bootstrap.Modal(document.getElementById('ach1modal'), {});
-var ach4modal = new bootstrap.Modal(document.getElementById('ach1modal'), {});
-var ach5modal = new bootstrap.Modal(document.getElementById('ach1modal'), {});
-var ach6modal = new bootstrap.Modal(document.getElementById('ach1modal'), {});
-var ach7modal = new bootstrap.Modal(document.getElementById('ach1modal'), {});
-var ach8modal = new bootstrap.Modal(document.getElementById('ach1modal'), {});
-var ach9modal = new bootstrap.Modal(document.getElementById('ach1modal'), {});
-var ach10modal = new bootstrap.Modal(document.getElementById('ach1modal'), {});
-var ach11modal = new bootstrap.Modal(document.getElementById('ach1modal'), {});
-var ach12modal = new bootstrap.Modal(document.getElementById('ach1modal'), {});
+var ach2modal = new bootstrap.Modal(document.getElementById('ach2modal'), {});
+var ach3modal = new bootstrap.Modal(document.getElementById('ach3modal'), {});
+var ach4modal = new bootstrap.Modal(document.getElementById('ach4modal'), {});
+var ach5modal = new bootstrap.Modal(document.getElementById('ach5modal'), {});
+var ach6modal = new bootstrap.Modal(document.getElementById('ach6modal'), {});
+var ach7modal = new bootstrap.Modal(document.getElementById('ach7modal'), {});
+var ach8modal = new bootstrap.Modal(document.getElementById('ach8modal'), {});
+var ach9modal = new bootstrap.Modal(document.getElementById('ach9modal'), {});
+var ach10modal = new bootstrap.Modal(document.getElementById('ach10modal'), {});
+var ach11modal = new bootstrap.Modal(document.getElementById('ach11modal'), {});
+var ach12modal = new bootstrap.Modal(document.getElementById('ach12modal'), {});
 
 window.onload = function(){
     if (ffp === fp){
