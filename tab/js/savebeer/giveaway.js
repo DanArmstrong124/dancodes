@@ -1,5 +1,6 @@
 var storageGiveawayNum = parseInt(localStorage.getItem('giveawaynum'));
 var giveawaynumberdiv = document.getElementById("giveawaynumber");
+var awarelocal = localStorage.getItem('aware');
 
 function getRandomInt(max) {
   return Math.floor(Math.random() * max);
@@ -21,7 +22,7 @@ setTimeout(function() {
 }, 100);
 
 setInterval(function() {
-    if ((storageTotalPints >= 10) && (timeplayed >= 7200) && (aware === "true")) {
+    if ((storageTotalPints >= 10) && (timeplayed >= 7200) && (awarelocal === "true")) {
         giveawaynumberdiv.innerHTML()
     }
 }, 1000);
