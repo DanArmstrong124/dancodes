@@ -98,34 +98,34 @@ addit.addEventListener("click", function() {
       //  alert("You can only have one pint every 15 mins.")
         //announce they have hit limit for the day/week/hour
    // }
+   if (storageTotalPints === 0){
+       location.reload();
+   }
    if (storageTotalPints === 1){
        location.reload();
    }
-   if (storageTotalPints === 2){
+   if (storageTotalPints === 9){
        location.reload();
    }
-   if (storageTotalPints === 10){
+   if (storageTotalPints === 49){
        location.reload();
    }
-   if (storageTotalPints === 50){
+   if (storageTotalPints === 123){
        location.reload();
    }
-   if (storageTotalPints === 124){
+   if (storageTotalPints === 149){
        location.reload();
    }
-   if (storageTotalPints === 150){
+   if (storageTotalPints === 371){
        location.reload();
    }
-   if (storageTotalPints === 372){
+   if (storageTotalPints === 399){
        location.reload();
    }
-   if (storageTotalPints === 400){
+   if (storageTotalPints === 619){
        location.reload();
    }
-   if (storageTotalPints === 620){
-       location.reload();
-   }
-   if (storageTotalPints === 1000){
+   if (storageTotalPints === 999){
        location.reload();
    }
 });
