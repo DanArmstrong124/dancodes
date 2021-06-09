@@ -24,3 +24,8 @@
 .modal-pics img{
     max-width:150px;
 }
+
+.spinning:hover {
+    transform:rotate(45deg);
+    transition-duration:1s;
+}
