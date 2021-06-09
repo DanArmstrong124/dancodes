@@ -452,47 +452,47 @@ window.onload = function(){
         localStorage.setItem('ffirstpint', false);
         ach1modal.show();
     }
-    if ((fdp !== "true") && (dp !== "true")){
+    if (fdp === dp){
         localStorage.setItem('fdoubleparked', false);
         ach2modal.show();
     }
-    if ((foo !== "true") && (oo !== "true")){
+    if (foo === oo){
         localStorage.setItem('foutout', false);
         ach3modal.show();
     }
-    if ((fwk !== "true") && (wk !== "true")){
+    if (fwk === wk){
         localStorage.setItem('fweekender', false);
         ach4modal.show();
     }
-    if ((ftl !== "true") && (tl !== "true")){
+    if (ftl === tl){
         localStorage.setItem('fthelocal', false);
         ach5modal.show();
     }
-    if ((fbs !== "true") && (bs !== "true")){
+    if (fbs === bs){
         localStorage.setItem('fbigspender', false);
         ach6modal.show();
     }
-    if ((fpa !== "true") && (pa !== "true")){
+    if (fpa === pa){
         localStorage.setItem('fpatriot', false);
         ach7modal.show();
     }
-    if ((fil !== "true") && (il !== "true")){
+    if (fil === il){
         localStorage.setItem('fironliver', false);
         ach8modal.show();
     }
-    if ((fop !== "true") && (op !== "true")){
+    if (fop === op){
         localStorage.setItem('foops', false);
         ach9modal.show();
     }
-    if ((faw !== "true") && (aw !== "true")){
+    if (faw === aw){
         localStorage.setItem('faware', false);
         ach10modal.show();
     }
-    if ((fhr !== "true") && (hr !== "true")){
+    if (fhr === hr){
         localStorage.setItem('fhero', false);
         ach11modal.show();
     }
-    if ((fta !== "true") && (ta !== "true")){
+    if (fta === ta){
         localStorage.setItem('ftimeatthebar', false);
         ach12modal.show();
     }

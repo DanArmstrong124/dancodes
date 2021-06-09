@@ -98,6 +98,36 @@ addit.addEventListener("click", function() {
       //  alert("You can only have one pint every 15 mins.")
         //announce they have hit limit for the day/week/hour
    // }
+   if (storageTotalPints === 1){
+       location.reload();
+   }
+   if (storageTotalPints === 2){
+       location.reload();
+   }
+   if (storageTotalPints === 10){
+       location.reload();
+   }
+   if (storageTotalPints === 50){
+       location.reload();
+   }
+   if (storageTotalPints === 124){
+       location.reload();
+   }
+   if (storageTotalPints === 150){
+       location.reload();
+   }
+   if (storageTotalPints === 372){
+       location.reload();
+   }
+   if (storageTotalPints === 400){
+       location.reload();
+   }
+   if (storageTotalPints === 620){
+       location.reload();
+   }
+   if (storageTotalPints === 1000){
+       location.reload();
+   }
 });
 
 removeitconfirm.addEventListener("click", function() {
@@ -110,6 +140,7 @@ removeitconfirm.addEventListener("click", function() {
         pintsleft.innerHTML = parseInt(localStorage.getItem('currentpints'));
         if (removeclick === "false"){
             localStorage.setItem('removeclick', true);
+            location.reload();
         }
 });
 
