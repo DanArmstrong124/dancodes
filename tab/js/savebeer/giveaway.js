@@ -23,7 +23,7 @@ setTimeout(function() {
 
 setInterval(function() {
     if ((storageTotalPints >= 10) && (timeplayed >= 7200) && (awarelocal === "true")) {
-        giveawaynumberdiv.innerHTML(parseInt(localStorage.getItem('giveawaynum')));
+        giveawaynumberdiv.innerHTML = parseInt(localStorage.getItem('giveawaynum'));
     }
 }, 1000);
 
