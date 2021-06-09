@@ -15,7 +15,9 @@ setTimeout(function() {
 }, 50)
 
 setTimeout(function() {
-    parseInt(localStorage.setItem('giveawaynum', giveawaynum));
+    if(parseInt(localStorage.getItem('giveawaynum')) === 0) {
+        parseInt(localStorage.setItem('giveawaynum', giveawaynum));
+    }
 }, 100);
 
 setInterval(function() {
