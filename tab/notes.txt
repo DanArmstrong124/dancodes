@@ -1,5 +1,14 @@
 OTHER GLASSES?
 
-Achivement modals, finish setup
+ADD message about any drink counts
 
 remove ach refresh on click
+
+setup "collections" of achievements. In sets of 8-10. On complete show modal saying you've completed set X for achievements.
+Publish a bulk selection of achievements on a certain day.
+
+--//--
+Ensure security for TAB is 100%
+Ensure that the app store is updated 100%
+--//--
+
