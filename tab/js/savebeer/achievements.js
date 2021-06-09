@@ -448,7 +448,7 @@ var ach11modal = new bootstrap.Modal(document.getElementById('ach1modal'), {});
 var ach12modal = new bootstrap.Modal(document.getElementById('ach1modal'), {});
 
 window.onload = function(){
-    if ((ffp !== "true") && (fp !== "true")){
+    if (ffp === fp){
         localStorage.setItem('ffirstpint', false);
         ach1modal.show();
     }
