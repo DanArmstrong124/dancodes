@@ -410,6 +410,8 @@ var achmodal = new bootstrap.Modal(document.getElementById('achievementsmodal'),
 var achmodalclose = document.getElementById("achmodalclose");
 var awareclickbtn = document.getElementById("awareclick");
 
+//MAYBE REMOVE BELOW
+
 ach.addEventListener("click", function(){
     localStorage.setItem("achopener", "true");
     location.reload();
@@ -425,6 +427,8 @@ setInterval(function() {
         achmodal.show();
     }
 }, 50);
+
+//MAYBE REMOVE ABOVE
 
 awareclickbtn.addEventListener("click", function(){
     if (awareclick === "false"){
