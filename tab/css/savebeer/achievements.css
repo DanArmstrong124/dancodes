@@ -23,6 +23,7 @@
 
 .modal-pics img{
     max-width:150px;
+    margin-bottom: 20px;
 }
 
 .spinning:hover {

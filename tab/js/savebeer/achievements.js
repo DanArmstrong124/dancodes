@@ -434,41 +434,66 @@ awareclickbtn.addEventListener("click", function(){
     }
 });
 
+var ach1modal = new bootstrap.Modal(document.getElementById('ach1modal'), {});
+var ach2modal = new bootstrap.Modal(document.getElementById('ach1modal'), {});
+var ach3modal = new bootstrap.Modal(document.getElementById('ach1modal'), {});
+var ach4modal = new bootstrap.Modal(document.getElementById('ach1modal'), {});
+var ach5modal = new bootstrap.Modal(document.getElementById('ach1modal'), {});
+var ach6modal = new bootstrap.Modal(document.getElementById('ach1modal'), {});
+var ach7modal = new bootstrap.Modal(document.getElementById('ach1modal'), {});
+var ach8modal = new bootstrap.Modal(document.getElementById('ach1modal'), {});
+var ach9modal = new bootstrap.Modal(document.getElementById('ach1modal'), {});
+var ach10modal = new bootstrap.Modal(document.getElementById('ach1modal'), {});
+var ach11modal = new bootstrap.Modal(document.getElementById('ach1modal'), {});
+var ach12modal = new bootstrap.Modal(document.getElementById('ach1modal'), {});
+
 window.onload = function(){
     if ((ffp !== "true") && (fp !== "true")){
         localStorage.setItem('ffirstpint', false);
+        ach1modal.show();
     }
     if ((fdp !== "true") && (dp !== "true")){
         localStorage.setItem('fdoubleparked', false);
+        ach2modal.show();
     }
     if ((foo !== "true") && (oo !== "true")){
         localStorage.setItem('foutout', false);
+        ach3modal.show();
     }
     if ((fwk !== "true") && (wk !== "true")){
         localStorage.setItem('fweekender', false);
+        ach4modal.show();
     }
     if ((ftl !== "true") && (tl !== "true")){
         localStorage.setItem('fthelocal', false);
+        ach5modal.show();
     }
     if ((fbs !== "true") && (bs !== "true")){
         localStorage.setItem('fbigspender', false);
+        ach6modal.show();
     }
     if ((fpa !== "true") && (pa !== "true")){
         localStorage.setItem('fpatriot', false);
+        ach7modal.show();
     }
     if ((fil !== "true") && (il !== "true")){
         localStorage.setItem('fironliver', false);
+        ach8modal.show();
     }
     if ((fop !== "true") && (op !== "true")){
         localStorage.setItem('foops', false);
+        ach9modal.show();
     }
     if ((faw !== "true") && (aw !== "true")){
         localStorage.setItem('faware', false);
+        ach10modal.show();
     }
     if ((fhr !== "true") && (hr !== "true")){
         localStorage.setItem('fhero', false);
+        ach11modal.show();
     }
     if ((fta !== "true") && (ta !== "true")){
         localStorage.setItem('ftimeatthebar', false);
+        ach12modal.show();
     }
 };
