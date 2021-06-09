@@ -1,6 +1,20 @@
 addtimer = document.getElementById("addtimer");
 removetimer = document.getElementById("removetimer");
 
+var timeplayed = parseInt(localStorage.getItem('timeplayed'));
+
+setInterval(function() {
+    if (isNaN(timeplayed)) {
+        parseInt(localStorage.setItem('timeplayed', 0));
+        location.reload();
+    }
+},100);
+
+setInterval(function() {
+    timeplayed = parseInt(localStorage.getItem('timeplayed'));
+    parseInt(localStorage.setItem('timeplayed', timeplayed + 1));
+}, 1000);
+
 var rtimecount = 5;
 var atimecount = 5;
 
