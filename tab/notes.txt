@@ -1,14 +1,21 @@
-OTHER GLASSES?
-
-ADD message about any drink counts
-
-remove ach refresh on click
-
 setup "collections" of achievements. In sets of 8-10. On complete show modal saying you've completed set X for achievements.
 Publish a bulk selection of achievements on a certain day.
 
 --//--
 Ensure security for TAB is 100%
 Ensure that the app store is updated 100%
+FIX TEAM TASKS
 --//--
 
+Giveaway feature:
+
+    - When 3x Criteria meet : RNG(1-1,000,000).
+    - - Criteria: 
+    - - Amount of seconds played for (New VAR saved to local storage)
+    - - 10 Pints Poured
+    - - Drink Aware
+    - Modal (You have a chance at 2 more entries, please check your achievements for a giveaway code.)
+    - Giveaway code sits at top of achievements.
+    - Instruct them to screenshot their achievements tab with their giveaway code.
+    - Upload the picture to GLEAM.IO Giveaway.
+    - Approve or deny them for extra 2 entries.
