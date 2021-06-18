@@ -688,7 +688,24 @@ position: absolute;
       </div>
     </div>
   </div>
-</div>                                                  
+</div>
+
+<script>
+  const getDeviceType = () => {
+  const ua = navigator.userAgent;
+  if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
+     alert("tablet");
+  }
+  if (
+    /Mobile|iP(hone|od)|Android|BlackBerry|IEMobile|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(
+      ua
+    )
+  ) {
+    alert("mobile");
+  }
+   alert("desktop");
+};
+</script>
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
