@@ -691,6 +691,8 @@ position: absolute;
 </div>
 
 <script>
+    setTimeout(function(){
+
   const getDeviceType = () => {
   const ua = navigator.userAgent;
   if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
@@ -707,6 +709,8 @@ position: absolute;
 };
 
 alert(ua);
+
+}, 1000);
 </script>
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
