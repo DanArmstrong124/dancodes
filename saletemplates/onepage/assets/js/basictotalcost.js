@@ -1,4 +1,4 @@
-var costdiv = $('#cost');
+var cost = $('#cost');
 
 var totalcost = 250;
 
