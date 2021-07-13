@@ -3,5 +3,5 @@ var cost = $('#cost');
 var totalcost = 250;
 
 setInterval(function(){
-    costdiv.innerHTML = "Total Cost: £" + totalcost;
+    costdiv.html() = "Total Cost: £" + totalcost;
 }, 100);
