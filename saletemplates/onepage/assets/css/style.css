@@ -10,6 +10,7 @@
     background: #daa03d;
     color: white;
     font-weight: 700;
+    z-index: 5;
 }
 
 .tac {
@@ -25,6 +26,14 @@
 .sectionb {
     width: 100%;
     height: 375px;
+}
+
+form {
+    
+    width: 50%;
+    margin: auto;
+    padding-top: 48px;
+
 }
 
 .picture-frame {
