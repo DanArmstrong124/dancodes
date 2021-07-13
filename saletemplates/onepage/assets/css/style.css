@@ -7,6 +7,10 @@
     position: absolute;
     top: 87%;
     left: 72%;
+    background: #daa03d;
+    color: white;
+    font-weight: 700;
+}
 }
 
 #cost {
