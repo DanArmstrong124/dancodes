@@ -27,6 +27,11 @@
     height: 375px;
 }
 
+.picture-frame {
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
 .s1 {
     background-color: white;
 }
