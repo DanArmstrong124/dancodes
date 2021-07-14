@@ -10,9 +10,9 @@ var s2 = $('#s2');
 var s3 = $('#s3');
 
 setInterval(function(){
-    bg = bg.value;
-    hd = hd.value;
-    fn = fn.value;
+    bg = $('#bgcolour').value;
+    hd = $('#hdcolour').value;
+    fn = $('#fncolour').value;
     if (bg !== "") {
         body.style.background = bg;
         s1.style.background = bg;
