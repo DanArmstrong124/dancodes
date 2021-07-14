@@ -20,6 +20,10 @@
     max-width: 94px;
 }
 
+.input-colour {
+    width: 16.6%;
+}
+
 .show {
     display: block;
 }
