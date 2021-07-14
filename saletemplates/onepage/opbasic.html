@@ -10,7 +10,7 @@
     <script src="https://kit.fontawesome.com/b7aaf64590.js" crossorigin="anonymous"></script>
     
 </head>
-<body id="">
+<body id="body">
     <div class="cost"><p class="costtext" id="cost" style="text-align: center; margin-top: 16px;"></p></div>
     <a data-bs-toggle="modal" data-bs-target="#exampleModal"><img class="colourpick" id="colourpick" src="assets/media/colourwheel.png" alt=""></a>
 
@@ -22,11 +22,10 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            Please type the colours you would like to preview in the boxes below.
-            <div class="row">
-            <input class="input-colour" type="text"><!--background-->
-            <input class="input-colour" type="text"><!--header-->
-            <input class="input-colour" type="text"><!--text-->
+            <div class="row tac">
+            <input class="input-colour" id="bgcolour" type="text" placeholder="Background Colour"><!--background--><br>
+            <input class="input-colour" id="hdcolour" type="text" placeholder="Header Colour"><!--header--><br>
+            <input class="input-colour" id="fncolour" type="text" placeholder="Font Colour"><!--text-->
             </div>
           </div>
           <div class="modal-footer">
