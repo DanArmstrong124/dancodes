@@ -17,6 +17,7 @@
     position: fixed;
     top: 87%;
     z-index: 5;
+    max-width: 94px;
 }
 
 .show {
