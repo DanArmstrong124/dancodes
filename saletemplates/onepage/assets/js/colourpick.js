@@ -14,9 +14,9 @@ setInterval(function(){
     hd = $('#hdcolour').value;
     fn = $('#fncolour').value;
     if (bg !== "") {
-        body.style.background = $('#bgcolour').value;
-        s1.style.background = $('#bgcolour').value;
-        s2.style.background = $('#bgcolour').value;
-        s3.style.background = $('#bgcolour').value;
+        body.css( "background-color", $('#bgcolour').value);
+        s1.css( "background-color", $('#bgcolour').value);
+        s2.css( "background-color", $('#bgcolour').value);
+        s3.css( "background-color", $('#bgcolour').value);
     }
 }, 100);
