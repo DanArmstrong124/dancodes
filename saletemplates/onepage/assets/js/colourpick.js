@@ -11,7 +11,7 @@ var s3 = $('#s3');
 
 setInterval(function(){
     //if (bg.value() !== "") {
-        body.css( "background-color", $('#bgcolour').value);
+        body.css( "background-color", document.getElementById('bgcolour').value);
         s1.css( "background-color", $('#bgcolour').value);
         s2.css( "background-color", $('#bgcolour').value);
         s3.css( "background-color", $('#bgcolour').value);
