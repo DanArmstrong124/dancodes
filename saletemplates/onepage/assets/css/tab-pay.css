@@ -76,4 +76,10 @@
     padding: 0px;
     padding-bottom: 10px;
 }
+
+.weekly {
+    position: relative;
+    top: -35px;
+    color: white;
+    font-size: x-small;
 }
