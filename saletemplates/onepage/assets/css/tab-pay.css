@@ -9,6 +9,17 @@
     left: -13px;
 }
 
+.curve2 {
+    width: 20px;
+    background: #DCA123;
+    height: 25px;
+    position: relative;
+    top: -22px;
+    border-radius: 50%;
+    z-index: -1;
+    left: -13px;
+}
+
 .def {
     height: 25px;
     background: white;
