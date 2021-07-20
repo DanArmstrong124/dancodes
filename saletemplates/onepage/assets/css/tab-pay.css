@@ -23,3 +23,7 @@
     background-color: lightgray;
     border: 1px solid darkgrey;
 }
+
+.marbtn {
+    margin: 10px;
+}
