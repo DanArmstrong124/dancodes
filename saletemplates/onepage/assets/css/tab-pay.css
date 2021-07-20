@@ -77,6 +77,17 @@
     padding-bottom: 10px;
 }
 
+.a5002 {
+    position: relative;
+    width: 50px;
+    font-size: 11px;
+    height: 30px;
+    left: -2px;
+    top: -4px;
+    padding: 0px;
+    padding-bottom: 10px;
+}
+
 .weekly {
     position: relative;
     top: -35px;
