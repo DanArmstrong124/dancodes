@@ -1,0 +1,10 @@
+.curve {
+    width: 20px;
+    background: black;
+    height: 25px;
+    position: relative;
+    top: -25px;
+    border-radius: 50%;
+    z-index: -1;
+    left: -13px;
+}
