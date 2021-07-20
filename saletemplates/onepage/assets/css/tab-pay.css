@@ -55,3 +55,25 @@
 .shown {
     display: block;
 }
+
+.free2 {
+    position: relative;
+    left: -2px;
+    top: -4px;
+    width: 50px;
+    height: 30px;
+    font-size: 15px;
+    padding: 3px;
+}
+
+.a2502 {
+    position: relative;
+    width: 50px;
+    font-size: 11px;
+    height: 30px;
+    left: -2px;
+    top: -4px;
+    padding: 0px;
+    padding-bottom: 10px;
+}
+}
