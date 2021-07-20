@@ -25,6 +25,10 @@
     border: 1px solid darkgrey;
 }
 
+.fa-beer {
+    font-size: 45px !important;
+}
+
 .marbtn {
     margin: 10px;
 }
