@@ -21,4 +21,5 @@
 
 .cross {
     background-color: lightgray;
+    border: 1px solid darkgrey;
 }
