@@ -29,6 +29,10 @@
     font-size: 45px !important;
 }
 
+.icon {
+    height: 45px;
+}
+
 .marbtn {
     margin: 10px;
 }
