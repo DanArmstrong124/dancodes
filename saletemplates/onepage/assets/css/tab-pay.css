@@ -36,3 +36,11 @@
 .marbtn {
     margin: 10px;
 }
+
+.hidden {
+    display: none;
+}
+
+.shown {
+    display: block;
+}
