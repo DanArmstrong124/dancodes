@@ -130,7 +130,8 @@ section img#bush
     color: #b7d233;
     font-size: 1.5em;
     z-index: 9;
-    transform: translateY(100px), translateX(200px);
+    transform: translateY(100px);
+    margin-right: 550px;
 }
 
 .sec
