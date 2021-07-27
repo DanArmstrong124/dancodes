@@ -114,4 +114,5 @@ section img#bush
     background: #fff;
     color: #b7d233;
     font-size: 1.5em;
+    z-index: 9;
 }
