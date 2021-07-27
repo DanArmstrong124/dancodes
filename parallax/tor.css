@@ -76,6 +76,16 @@ section
     background: linear-gradient(#3ef3dc, #ff1100);
 }
 
+section::before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #1e5420, transparent);
+}
+
 section img
 {
     position: absolute;
@@ -124,4 +134,17 @@ section img#bush
     background: linear-gradient(#1e5420, #795548);
     text-align: center;
     color: #fff;
+    position: relative;
+    padding: 100px;
+}
+
+.sec h2
+{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+}
+
+.sec p
+{
+    font-size: 1em;
 }
