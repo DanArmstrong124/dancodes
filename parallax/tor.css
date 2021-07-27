@@ -86,9 +86,9 @@ section img
     object-fit: cover;
 }
 
-section img#tor
+section img#bush
 {
-    
+    z-index: 10;
 }
 
 #text
