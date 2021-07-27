@@ -100,3 +100,8 @@ section img#tor
     font-size: 1.5em;
     z-index: 9;
 }
+
+#bush
+{
+    top: 35px;
+}
