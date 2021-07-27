@@ -76,6 +76,7 @@ section
     justify-content: center;
     align-items: center;
     background: linear-gradient(#3ef3dc, #ff1100);
+    overflow: hidden;
 }
 
 section::before
@@ -107,6 +108,7 @@ section img#bush
 #text
 {
     position: absolute;
+    right: -350px;
     color: #fff;
     white-space: nowrap;
     font-size: 7.5vw;
