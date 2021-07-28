@@ -108,7 +108,8 @@ section img#water
 #text
 {
     position: absolute;
-    right: -715px;
+    right: -1400px;
+    top: 100px;
     color: #fff;
     white-space: nowrap;
     font-size: 7.5vw;
