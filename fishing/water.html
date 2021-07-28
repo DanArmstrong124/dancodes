@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tor</title>
+    <title>Water</title>
     <link rel="stylesheet" href="water.css">
 </head>
 <body>
@@ -18,10 +18,10 @@
         </ul>
     </header>
     <section>
-        <img src="clouds.png" id="tor" alt="">
+        <img src="clouds.png" id="clouds" alt="">
         <h2 id="text">Good Vibes & Good Tribes</h2>
         <a href="#sec" id="btn">Find Yourself</a>
-        <img src="water.png" id="bush" alt="">
+        <img src="water.png" id="water" alt="">
     </section>
     <div class="sec" id="sec">
         <h2>Parallex Scrolling</h2>
@@ -30,15 +30,15 @@
     </div>
 
     <script>
-        let tor = document.getElementById('tor');
-        let bush = document.getElementById('bush');
+        let clouds = document.getElementById('clouds');
+        let water = document.getElementById('water');
         let text = document.getElementById('text');
         let btn = document.getElementById('btn');
         let header = document.querySelector('header');
 
         window.addEventListener('scroll', function(){
            let value = window.scrollY;
-           tor.style.top = value * 0.5 + 'px';
+           clouds.style.top = value * 0.5 + 'px';
            text.style.marginRight = value * 6 + 'px';
            text.style.marginTop = value * 1.2 + 'px';
            btn.style.marginTop = value * 1.5 + 'px';
