@@ -15,4 +15,10 @@
         position: absolute;
         top: 20px;
     }
+    #sec{
+        top: 181px;
+        position: absolute;
+        left: 111px;
+        width: 196px;
+    }
   }
