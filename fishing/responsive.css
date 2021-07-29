@@ -1,3 +1,4 @@
+/*Iphone 6/7/8 Plus*/
 @media only screen and (max-width: 415px) {
     #water {
         top: 303px;
@@ -20,5 +21,274 @@
         position: absolute;
         left: 111px;
         width: 196px;
+    }
+    #sec{
+        padding: 35px;
+    }
+  }
+
+  /*Iphone 6/7/8*/
+  @media only screen and (max-width: 376px) {
+    #water {
+        top: 303px;
+    }
+    #clouds {
+        width: 414px;
+    }
+    ul#browse {
+        position: absolute;
+        top: 83px;
+        left: -23px;
+    }
+    .logo{
+        left: 136px;
+        position: absolute;
+        top: 20px;
+    }
+    #btn{
+        top: 181px;
+        position: absolute;
+        left: 87px;
+        width: 196px;
+    }
+    #sec{
+        padding: 35px;
+    }
+  }
+
+  /*Iphone 5/SE*/
+  @media only screen and (max-width: 321px) {
+    #water {
+        top: 303px;
+    }
+    #clouds {
+        width: 414px;
+    }
+    ul#browse {
+        position: absolute;
+        top: 83px;
+        left: -16px;
+        font-size: 11px;
+    }
+    .logo{
+        left: 115px;
+        position: absolute;
+        top: 20px;
+    }
+    #btn{
+        top: 181px;
+        position: absolute;
+        left: 68px;
+        width: 196px;
+    }
+    #sec{
+        padding: 20px;
+    }
+  }
+
+  /*Pixel 2 & XL*/
+@media only screen and (max-width: 412px) {
+    #water {
+        top: 334px;
+    }
+    #clouds {
+        width: 414px;
+    }
+    ul#browse {
+        position: absolute;
+        top: 83px;
+        left: 0px;
+    }
+    .logo{
+        left: 160px;
+        position: absolute;
+        top: 20px;
+    }
+    #btn{
+        top: 236px;
+        position: absolute;
+        left: 107px;
+        width: 196px;
+    }
+    #sec{
+        padding: 40px;
+    }
+  }
+
+    /*Galaxy S5 & Moto G4*/
+@media only screen and (max-width: 361px) {
+    #water {
+        top: 334px;
+    }
+    #clouds {
+        width: 414px;
+    }
+    ul#browse {
+        position: absolute;
+        top: 83px;
+        left: -17px;
+        font-size: 14px;
+    }
+    .logo{
+        left: 133px;
+        position: absolute;
+        top: 20px;
+    }
+    #btn{
+        top: 236px;
+        position: absolute;
+        left: 85px;
+        width: 196px;
+    }
+    #sec{
+        padding: 40px;
+    }
+  }
+
+      /*Iphone X*/
+@media only screen and (max-width: 376px) {
+    #water {
+        top: 334px;
+    }
+    #clouds {
+        width: 414px;
+    }
+    ul#browse {
+        position: absolute;
+        top: 83px;
+        left: -19px;
+        font-size: 15px;
+    }
+    .logo{
+        left: 133px;
+        position: absolute;
+        top: 20px;
+    }
+    #btn{
+        top: 236px;
+        position: absolute;
+        left: 85px;
+        width: 196px;
+    }
+    #sec{
+        padding: 40px;
+    }
+  }
+
+  /*Ipad*/
+@media only screen and (max-width: 769px) {
+    #water {
+        top: 415px;
+    }
+    ul#browse {
+        font-size: 20px;
+    }
+    .logo{
+        font-size: 4em;
+    }
+    #btn{
+        margin-right: 0;
+        transform: translateY(-75px);
+        font-size: 2.5em;
+    }
+    #landingfont p{
+        font-size: 2em;
+    }
+    #landingfont h2{
+        font-size: 5.5em;
+    }
+  }
+
+    /*Ipad Pro*/
+@media only screen and (max-width: 1024px) {
+    #water {
+        top: 556px;
+    }
+    ul#browse {
+        font-size: 32px;
+    }
+    .logo{
+        font-size: 4em;
+    }
+    #btn{
+        margin-right: 0;
+        transform: translateY(-155px);
+        font-size: 3.5em;
+    }
+    #landingfont p{
+        font-size: 2em;
+    }
+    #landingfont h2{
+        font-size: 5.5em;
+    }
+  }
+
+      /*Surface Duo*/
+@media only screen and (max-width: 541px) {
+    header{
+        padding: 30px 60px;
+    }
+    #water {
+        top: 290px;
+    }
+    ul#browse {
+        font-size: 12px;
+    }
+    .logo{
+        font-size: 2em;
+    }
+    #btn{
+        margin-right: 0;
+        transform: translateY(-113px);
+        font-size: 1.5em;
+    }
+    #landingfont p{
+        font-size: 1em;
+    }
+    #landingfont h2{
+        font-size: 3.5em;
+    }
+  }
+
+        /*Galaxy Fold*/
+@media only screen and (max-width: 281px) {
+    header{
+        padding: 30px 60px;
+    }
+    #water {
+        top: 290px;
+    }
+    ul#browse {
+        font-size: 11px;
+        position: absolute;
+        top: 83px;
+        left: 5px;
+    }
+    header ul li {
+        margin-left: 3px;
+    }
+    .logo{
+        font-size: 2em;
+        left: 94px;
+        position: absolute;
+        top: 20px;
+    }
+    #btn{
+        margin-right: 0;
+        transform: translateY(-113px);
+        font-size: 1em;
+        top: 330px;
+        position: absolute;
+        left: 67px;
+        width: 151px;
+    }
+    #landingfont p{
+        font-size: 1em;
+    }
+    #landingfont h2{
+        font-size: 2.5em;
+    }
+    #sec {
+        padding: 30px;
     }
   }
