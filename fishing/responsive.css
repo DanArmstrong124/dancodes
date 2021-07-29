@@ -21,6 +21,7 @@
         position: absolute;
         left: 111px;
         width: 196px;
+        transform: translateY(10px);
     }
     #sec{
         padding: 35px;
@@ -50,6 +51,7 @@
         position: absolute;
         left: 87px;
         width: 196px;
+        transform: translateY(-40px);
     }
     #sec{
         padding: 35px;
@@ -169,6 +171,7 @@
         position: absolute;
         left: 85px;
         width: 196px;
+        transform: translateY(-30px);
     }
     #sec{
         padding: 40px;
@@ -239,7 +242,7 @@
     }
     #btn{
         margin-right: 0;
-        transform: translateY(-113px);
+        transform: translateY(-90px);
         font-size: 1.5em;
     }
     #landingfont p{
