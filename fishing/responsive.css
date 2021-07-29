@@ -1,3 +1,80 @@
+   /*Ipad Pro*/
+   @media only screen and (max-width: 1024px) {
+    #water {
+        top: 556px;
+    }
+    ul#browse {
+        font-size: 32px;
+    }
+    .logo{
+        font-size: 4em;
+    }
+    #btn{
+        margin-right: 0;
+        transform: translateY(-155px);
+        font-size: 3.5em;
+    }
+    #landingfont p{
+        font-size: 2em;
+    }
+    #landingfont h2{
+        font-size: 5.5em;
+    }
+  }
+
+/*Ipad*/
+@media only screen and (max-width: 769px) {
+    #water {
+        top: 415px;
+    }
+    ul#browse {
+        font-size: 20px;
+    }
+    .logo{
+        font-size: 4em;
+    }
+    #btn{
+        margin-right: 0;
+        transform: translateY(-75px);
+        font-size: 2.5em;
+    }
+    #landingfont p{
+        font-size: 2em;
+    }
+    #landingfont h2{
+        font-size: 5.5em;
+    }
+  }
+
+
+     /*Surface Duo*/
+      @media only screen and (max-width: 541px) {
+        header{
+            padding: 30px 60px;
+        }
+        #water {
+            top: 290px;
+        }
+        ul#browse {
+            font-size: 12px;
+        }
+        .logo{
+            font-size: 2em;
+        }
+        #btn{
+            margin-right: 0;
+            transform: translateY(-90px);
+            font-size: 1.5em;
+        }
+        #landingfont p{
+            font-size: 1em;
+        }
+        #landingfont h2{
+            font-size: 3.5em;
+        }
+      }
+    
+
 /*Iphone 6/7/8 Plus*/
 @media only screen and (max-width: 415px) {
     #water {
@@ -25,6 +102,66 @@
     }
     #sec{
         padding: 35px;
+    }
+  }
+
+    /*Pixel 2 & XL*/
+@media only screen and (max-width: 412px) {
+    #water {
+        top: 334px;
+    }
+    #clouds {
+        width: 414px;
+    }
+    ul#browse {
+        position: absolute;
+        top: 83px;
+        left: 0px;
+    }
+    .logo{
+        left: 160px;
+        position: absolute;
+        top: 20px;
+    }
+    #btn{
+        top: 236px;
+        position: absolute;
+        left: 107px;
+        width: 196px;
+    }
+    #sec{
+        padding: 40px;
+    }
+  }
+
+        /*Iphone X*/
+@media only screen and (max-width: 376px) {
+    #water {
+        top: 334px;
+    }
+    #clouds {
+        width: 414px;
+    }
+    ul#browse {
+        position: absolute;
+        top: 83px;
+        left: -19px;
+        font-size: 15px;
+    }
+    .logo{
+        left: 133px;
+        position: absolute;
+        top: 20px;
+    }
+    #btn{
+        top: 236px;
+        position: absolute;
+        left: 85px;
+        width: 196px;
+        transform: translateY(-30px);
+    }
+    #sec{
+        padding: 40px;
     }
   }
 
@@ -58,6 +195,36 @@
     }
   }
 
+    /*Galaxy S5 & Moto G4*/
+    @media only screen and (max-width: 361px) {
+        #water {
+            top: 334px;
+        }
+        #clouds {
+            width: 414px;
+        }
+        ul#browse {
+            position: absolute;
+            top: 83px;
+            left: -17px;
+            font-size: 14px;
+        }
+        .logo{
+            left: 133px;
+            position: absolute;
+            top: 20px;
+        }
+        #btn{
+            top: 236px;
+            position: absolute;
+            left: 85px;
+            width: 196px;
+        }
+        #sec{
+            padding: 40px;
+        }
+      }
+
   /*Iphone 5/SE*/
   @media only screen and (max-width: 321px) {
     #water {
@@ -85,171 +252,6 @@
     }
     #sec{
         padding: 20px;
-    }
-  }
-
-  /*Pixel 2 & XL*/
-@media only screen and (max-width: 412px) {
-    #water {
-        top: 334px;
-    }
-    #clouds {
-        width: 414px;
-    }
-    ul#browse {
-        position: absolute;
-        top: 83px;
-        left: 0px;
-    }
-    .logo{
-        left: 160px;
-        position: absolute;
-        top: 20px;
-    }
-    #btn{
-        top: 236px;
-        position: absolute;
-        left: 107px;
-        width: 196px;
-    }
-    #sec{
-        padding: 40px;
-    }
-  }
-
-    /*Galaxy S5 & Moto G4*/
-@media only screen and (max-width: 361px) {
-    #water {
-        top: 334px;
-    }
-    #clouds {
-        width: 414px;
-    }
-    ul#browse {
-        position: absolute;
-        top: 83px;
-        left: -17px;
-        font-size: 14px;
-    }
-    .logo{
-        left: 133px;
-        position: absolute;
-        top: 20px;
-    }
-    #btn{
-        top: 236px;
-        position: absolute;
-        left: 85px;
-        width: 196px;
-    }
-    #sec{
-        padding: 40px;
-    }
-  }
-
-      /*Iphone X*/
-@media only screen and (max-width: 376px) {
-    #water {
-        top: 334px;
-    }
-    #clouds {
-        width: 414px;
-    }
-    ul#browse {
-        position: absolute;
-        top: 83px;
-        left: -19px;
-        font-size: 15px;
-    }
-    .logo{
-        left: 133px;
-        position: absolute;
-        top: 20px;
-    }
-    #btn{
-        top: 236px;
-        position: absolute;
-        left: 85px;
-        width: 196px;
-        transform: translateY(-30px);
-    }
-    #sec{
-        padding: 40px;
-    }
-  }
-
-  /*Ipad*/
-@media only screen and (max-width: 769px) {
-    #water {
-        top: 415px;
-    }
-    ul#browse {
-        font-size: 20px;
-    }
-    .logo{
-        font-size: 4em;
-    }
-    #btn{
-        margin-right: 0;
-        transform: translateY(-75px);
-        font-size: 2.5em;
-    }
-    #landingfont p{
-        font-size: 2em;
-    }
-    #landingfont h2{
-        font-size: 5.5em;
-    }
-  }
-
-    /*Ipad Pro*/
-@media only screen and (max-width: 1024px) {
-    #water {
-        top: 556px;
-    }
-    ul#browse {
-        font-size: 32px;
-    }
-    .logo{
-        font-size: 4em;
-    }
-    #btn{
-        margin-right: 0;
-        transform: translateY(-155px);
-        font-size: 3.5em;
-    }
-    #landingfont p{
-        font-size: 2em;
-    }
-    #landingfont h2{
-        font-size: 5.5em;
-    }
-  }
-
-      /*Surface Duo*/
-@media only screen and (max-width: 541px) {
-    header{
-        padding: 30px 60px;
-    }
-    #water {
-        top: 290px;
-    }
-    ul#browse {
-        font-size: 12px;
-    }
-    .logo{
-        font-size: 2em;
-    }
-    #btn{
-        margin-right: 0;
-        transform: translateY(-90px);
-        font-size: 1.5em;
-    }
-    #landingfont p{
-        font-size: 1em;
-    }
-    #landingfont h2{
-        font-size: 3.5em;
     }
   }
 
