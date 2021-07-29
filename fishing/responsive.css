@@ -1,5 +1,5 @@
    /*Ipad Pro*/
-   @media only screen and (max-width: 1024px) {
+   @media only screen and (max-width: 1024px) and (min-width: 769px) {
     #water {
         top: 556px;
     }
@@ -23,7 +23,7 @@
   }
 
 /*Ipad*/
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 769px) and (min-width: 541px) {
     #water {
         top: 415px;
     }
@@ -48,7 +48,7 @@
 
 
      /*Surface Duo*/
-      @media only screen and (max-width: 541px) {
+      @media only screen and (max-width: 541px) and (min-width: 415px) {
         header{
             padding: 30px 60px;
         }
@@ -76,7 +76,7 @@
     
 
 /*Iphone 6/7/8 Plus*/
-@media only screen and (max-width: 415px) {
+@media only screen and (max-width: 415px) and (min-width: 412px) {
     #water {
         top: 303px;
     }
@@ -106,7 +106,7 @@
   }
 
     /*Pixel 2 & XL*/
-@media only screen and (max-width: 412px) {
+@media only screen and (max-width: 412px) and (min-width: 376px) {
     #water {
         top: 334px;
     }
@@ -135,7 +135,7 @@
   }
 
         /*Iphone X*/
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 376px) and (min-height: 811px) {
     #water {
         top: 334px;
     }
@@ -166,7 +166,7 @@
   }
 
   /*Iphone 6/7/8*/
-  @media only screen and (max-width: 376px) {
+  @media only screen and (max-width: 376px) and (min-width: 361px) {
     #water {
         top: 303px;
     }
@@ -196,7 +196,7 @@
   }
 
     /*Galaxy S5 & Moto G4*/
-    @media only screen and (max-width: 361px) {
+    @media only screen and (max-width: 361px) and (min-width: 321px) {
         #water {
             top: 334px;
         }
@@ -226,7 +226,7 @@
       }
 
   /*Iphone 5/SE*/
-  @media only screen and (max-width: 321px) {
+  @media only screen and (max-width: 321px) and (min-width: 281px) {
     #water {
         top: 303px;
     }
