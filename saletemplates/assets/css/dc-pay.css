@@ -102,6 +102,9 @@ a {
 }
 
 .curveright {
+    width: 20px;
+    background: #DCA123;
+    height: 25px;
     position: relative;
     top: -25px;
     border-radius: 50%;
