@@ -31,6 +31,11 @@
     background-color: lightgoldenrodyellow;
 }
 
+.tabtick {
+    color: #DCA123;
+    background-color: #3f454c;
+}
+
 .cross {
     background-color: lightgray;
     border: 1px solid darkgrey;
