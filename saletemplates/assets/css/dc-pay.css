@@ -101,6 +101,14 @@ a {
     padding-top: 6px;
 }
 
+.curveright {
+    position: relative;
+    top: -25px;
+    border-radius: 50%;
+    z-index: -1;
+    left: 88px;
+}
+
 .tab-btn3 {
     background-color: #3f454c;
     border-radius: 0.25rem;
