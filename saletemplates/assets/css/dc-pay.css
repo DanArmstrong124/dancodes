@@ -88,6 +88,19 @@
     padding-bottom: 10px;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.tab-btn {
+    background-color: #DCA123;
+    border-radius: 0.25rem;
+    height: 38px;
+    margin: 10px;
+    padding-top: 6px;
+}
+
 .a5002 {
     position: relative;
     width: 50px;
