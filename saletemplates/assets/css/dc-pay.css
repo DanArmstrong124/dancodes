@@ -1,0 +1,96 @@
+.curve {
+    width: 20px;
+    background: #DCA123;
+    height: 25px;
+    position: relative;
+    top: -25px;
+    border-radius: 50%;
+    z-index: -1;
+    left: -13px;
+}
+
+.curve2 {
+    width: 20px;
+    background: #DCA123;
+    height: 25px;
+    position: relative;
+    top: -22px;
+    border-radius: 50%;
+    z-index: -1;
+    left: -13px;
+}
+
+.def {
+    height: 25px;
+    background: white;
+    border: 1px solid #DCA123;
+}
+
+.tick {
+    color: #DCA123;
+    background-color: lightgoldenrodyellow;
+}
+
+.cross {
+    background-color: lightgray;
+    border: 1px solid darkgrey;
+}
+
+.fa-beer {
+    font-size: 45px !important;
+}
+
+.icon {
+    height: 45px;
+}
+
+.marbtn {
+    margin: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.shown {
+    display: block;
+}
+
+.free2 {
+    position: relative;
+    left: -2px;
+    top: -4px;
+    width: 50px;
+    height: 30px;
+    font-size: 15px;
+    padding: 3px;
+}
+
+.a2502 {
+    position: relative;
+    width: 50px;
+    font-size: 11px;
+    height: 30px;
+    left: -2px;
+    top: -4px;
+    padding: 0px;
+    padding-bottom: 10px;
+}
+
+.a5002 {
+    position: relative;
+    width: 50px;
+    font-size: 11px;
+    height: 30px;
+    left: -2px;
+    top: -4px;
+    padding: 0px;
+    padding-bottom: 10px;
+}
+
+.weekly {
+    position: relative;
+    top: -35px;
+    color: white;
+    font-size: x-small;
+}
