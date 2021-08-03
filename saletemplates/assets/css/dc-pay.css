@@ -36,6 +36,12 @@
     background-color: #3f454c;
 }
 
+.nottab {
+    background: white !important;
+    color: white !important;
+    border: none !important;
+}
+
 .cross {
     background-color: lightgray;
     border: 1px solid darkgrey;
