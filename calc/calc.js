@@ -14,8 +14,16 @@ setInterval(function(){
 
     var staffreq = (sites / 10);
     var income = (sites * costs);
-    var staffpay = (income * 0.1);
-    var takeaway = (income * 0.9);
+
+    if ((staffreq > 0) && (staffreq.isInteger())){
+        var staffpay = (income * 0.1);
+        var takeaway = (income * 0.9);
+    }
+
+    if (staffreq < 1){
+        var staffpay = 0;
+        var takeaway = income;
+    }
 
     staffreqp.innerHTML = staffreq;
     staffpayp.innerHTML = staffpay;
