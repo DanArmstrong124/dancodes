@@ -17,7 +17,7 @@ setInterval(function(){
     var staffpay = (income * 0.1);
     var takeaway = (income * 0.9);
 
-    staffreq.innerHTML = staffreq;
+    staffreqp.innerHTML = staffreq;
     staffpayp.innerHTML = staffpay;
     incomep.innerHTML = income;
     takeawayp.innerHTML = takeaway;
