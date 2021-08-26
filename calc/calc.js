@@ -25,8 +25,8 @@ setInterval(function(){
         var takeaway = income;
     }
 
-    staffreqp.innerHTML = staffreq;
-    staffpayp.innerHTML = staffpay;
-    incomep.innerHTML = income;
-    takeawayp.innerHTML = takeaway;
+    staffreqp.innerHTML = staffreq + " Staff Members Required";
+    staffpayp.innerHTML = staffpay + " Staff Payments";
+    incomep.innerHTML = income + " Total Income";
+    takeawayp.innerHTML = takeaway + " My Takeaway";
 },50);
