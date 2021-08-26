@@ -17,8 +17,8 @@ setInterval(function(){
     var staffpay = (income * 0.1);
     var takeaway = (income * 0.9);
 
-    staffreq.html = staffreq;
+    staffreq.innerHTML = staffreq;
     staffpayp.innerHTML = staffpay;
-    incomep.html = income;
+    incomep.innerHTML = income;
     takeawayp.innerHTML = takeaway;
 },50);
