@@ -5,14 +5,20 @@ var incomep = document.getElementById('income');
 var staffpayp = document.getElementById('staffpay');
 var takeawayp = document.getElementById('takeaway');
 
-//Every 10 Website = 1 Staff
-//Staff pay 10%
+//Every 25 Websites = 1 Staff
+//Max 4 Staff
+//Staff pay 25%
 
 setInterval(function(){
     var sites = parseInt(sitenuminp.value);
     var costs = parseInt(sitecostinp.value);
 
-    var staffreq = (sites / 10);
+    var staffreq = (sites / 25);
+    
+    if (staffreq >= 4){
+        staffreq = 4;
+    }
+
     var income = (sites * costs);
 
     if (staffreq >= 1){
@@ -26,7 +32,7 @@ setInterval(function(){
     }
 
     staffreqp.innerHTML = staffreq + " Staff Members Required";
-    staffpayp.innerHTML = staffpay + " Staff Payments";
-    incomep.innerHTML = income + " Total Income";
-    takeawayp.innerHTML = takeaway + " My Takeaway";
+    staffpayp.innerHTML = "£" + staffpay + " Staff Payments";
+    incomep.innerHTML = "£" + income + " Total Income";
+    takeawayp.innerHTML = "£" + takeaway + " My Takeaway";
 },50);
