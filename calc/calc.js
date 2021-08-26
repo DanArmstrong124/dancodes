@@ -15,27 +15,33 @@ setInterval(function(){
 
     if ((sites !== "") && (costs !== "")){
 
-    var staffreq = (sites / 25);
+        var staffreq = (sites / 25);
 
-    if (staffreq >= 4){
-        staffreq = 4;
+        if (staffreq >= 4){
+            staffreq = 4;
+        }
+
+        var income = (sites * costs);
+
+        if (staffreq >= 1){
+            var staffpay = (income * 0.1);
+            var takeaway = (income * 0.9);
+        }
+
+        if (staffreq <= 0.9){
+            var staffpay = 0;
+            var takeaway = income;
+        }
+
+        staffreqp.innerHTML = staffreq + " Staff Members Required";
+        staffpayp.innerHTML = "£" + staffpay + " Staff Payments";
+        incomep.innerHTML = "£" + income + " Total Income";
+        takeawayp.innerHTML = "£" + takeaway + " My Takeaway";
     }
-
-    var income = (sites * costs);
-
-    if (staffreq >= 1){
-        var staffpay = (income * 0.1);
-        var takeaway = (income * 0.9);
-    }
-
-    if (staffreq <= 0.9){
-        var staffpay = 0;
-        var takeaway = income;
-    }
-
-    staffreqp.innerHTML = staffreq + " Staff Members Required";
-    staffpayp.innerHTML = "£" + staffpay + " Staff Payments";
-    incomep.innerHTML = "£" + income + " Total Income";
-    takeawayp.innerHTML = "£" + takeaway + " My Takeaway";
+    else{
+        staffreqp.innerHTML = "0 Staff Members Required";
+        staffpayp.innerHTML = "£0 Staff Payments";
+        incomep.innerHTML = "£0 Total Income";
+        takeawayp.innerHTML = "£0 My Takeaway";
     }
 },50);
