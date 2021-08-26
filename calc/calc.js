@@ -13,8 +13,10 @@ setInterval(function(){
     var sites = parseInt(sitenuminp.value);
     var costs = parseInt(sitecostinp.value);
 
+    if ((sites !== "") && (costs !== "")){
+
     var staffreq = (sites / 25);
-    
+
     if (staffreq >= 4){
         staffreq = 4;
     }
@@ -35,4 +37,5 @@ setInterval(function(){
     staffpayp.innerHTML = "£" + staffpay + " Staff Payments";
     incomep.innerHTML = "£" + income + " Total Income";
     takeawayp.innerHTML = "£" + takeaway + " My Takeaway";
+    }
 },50);
