@@ -1,7 +1,7 @@
 var testpass = localStorage.getItem('testerpass');
 
 var unlocked = new function(){
-    localStorage.setItem('testerpass', "tabdev");
+    localStorage.setItem('testerpass', "derek");
 };
 
 setInterval(function(){
