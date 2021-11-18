@@ -5,7 +5,7 @@ var unlocked = new function(){
 };
 
 setInterval(function(){
-    if (testpass !== "tabdev"){
+    if (testpass !== "derek"){
         localStorage.setItem('testerpass', false);
         window.location.href = "https://www.dancodes.co.uk/login";
     }
