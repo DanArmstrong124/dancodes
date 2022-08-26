@@ -10,8 +10,8 @@
     
 
     <script>
-        var type;
        function getMobileOperatingSystem() {
+           var type = "";
            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
        
            // Windows Phone must come first because its UA also contains "Android"
@@ -30,6 +30,8 @@
        
            return "unknown";
        }
+
+       getMobileOperatingSystem();
        
        if (type == "playstore"){
         location.replace('https://play.google.com/store/apps/details?id=com.vivlio.duckduck');
