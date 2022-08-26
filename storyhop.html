@@ -16,22 +16,27 @@
        
            // Windows Phone must come first because its UA also contains "Android"
            if (/windows phone/i.test(userAgent)) {
-               return "Windows Phone";
                type = "playstore"
            }
        
            if (/android/i.test(userAgent)) {
-               return "Android";
                type = "playstore";
            }
        
            // iOS detection from: http://stackoverflow.com/a/9039885/177710
            if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-               return "iOS";
                type = "applestore";
            }
        
            return "unknown";
-       }</script>
+       }
+       
+       if (type == "playstore"){
+        location.replace('https://play.google.com/store/apps/details?id=com.vivlio.duckduck');
+       }
+       if (type == "applestore"){
+        location.replace('https://apps.apple.com/gb/app/story-hop/id1549385285');
+       }
+       </script>
 </body>
 </html>
