@@ -10,7 +10,6 @@
     
 
     <script>
-       function getMobileOperatingSystem() {
            var type = "";
            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
        
@@ -27,11 +26,6 @@
            if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
                type = "applestore";
            }
-       
-           return "unknown";
-       }
-
-       getMobileOperatingSystem();
        
        if (type == "playstore"){
         location.replace('https://play.google.com/store/apps/details?id=com.vivlio.duckduck');
